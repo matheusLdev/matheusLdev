@@ -1,32 +1,144 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="style/style.css">
-    <title>MathGo - Developer</title>
-</head>
-<body>
-    <header>
-        <nav>Aqui é o menu de navegação da página</nav>
-    </header>
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+        <title>MathGo - Developer</title>
+    </head>
+    <body>
+        <!---start of header-->
+        <header>
+            <h1>Matheus Gonçalves - Web Developer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SOBRE MIM</a></li>
+                    <li><a href="#"><img src="imagens/logo-mathgo.png" style="width: 150px;"/></a></li>
+                    <li><a href="#">PROJETOS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!---end of header-->
+        <!---end of header-->
+        <!---start of about me-->
+        <main>
+            <section>
+                <h2>Olá, tudo bem?</h2>
+                <p>
+                    Sou Matheus Gonçalves, desenvolvedor web. Apaixonado por tecnologia, games e esportes. Tenho como meus pontos fortes organização, atento aos detalhes, facilidade de adaptação e aprendizado. Possuo experiência com liderança e treinamento de equipe de vendas de souvenirs, no setor de turismo. Atualmente estou buscando minha oportunidade como desenvolvedor web.
+                </p>
+            </section>
+            <section>
+                <h2>Minhas skills!</h2>
+                <ul>
+                    <li><img src="imagens/logo-html.png"/></li>
+                    <li><img src="imagens/logo-css.png"/></li>
+                    <li><img src="imagens/logo-bootstrap.png"/></li>
+                    <li><img src="imagens/logo-js.png"/></li>
+                    <li><img src="imagens/logo-react.png"/></li>
+                    <li><img src="imagens/logo-nodejs.png"/></li>
+                    <li><img src="imagens/logo-php.png"/></li>
+                    <li><img src="imagens/logo-mysql.png"/></li>
+                </ul>
+                <p>
+                    Além dessas skills, possuo conhecimentos em SASS, TypeScript, construção e consumo de API, IONIC, jQuery e WordPress. Na minha trilha de evolução vou estudar Angular, Vue e python. O aprendizado não pode parar.
+                </p>
+            </section>
+        </main>
+        <!---end of about me-->
+        <!---start of projects-->
         <section>
-            <h1>Falarei sobre mim!</h1>
+            <h2>Veja um pouco dos meus projetos realizados:</h2>
+            <article>
+                <h3>Em breve!</h3>
+                <p>Trabalhando nisso.</p>
+            </article>
+            <article>
+                <h3>Em breve!</h3>
+                <p>Trabalhando nisso.</p>
+            </article>
+            <article>
+                <h3>Em breve!</h3>
+                <p>Trabalhando nisso.</p>
+            </article>
+            <a href="#projetos">Ver mais</a>
         </section>
+        <!---end of projects-->
+        <!---start of contact-->
         <section>
-            <h1>Minhas skills!</h1>
+            <h2>Vamos conversar ?</h2>
+            <article>
+                <form action="">
+                    <fieldset disabled>
+                         <legend>Funcionará em breve!</legend>
+                         
+                         <label for="name">Nome:(*)</label>
+                         <br>
+                         <input id="name" required type="text" placeholder="Digite seu nome:">
+                         <br>
+                         <br>            
+                         
+                         <label for="telefone">Telefone:</label>
+                         <br>
+                         <input id="telefone" type="text" placeholder="(__)_____-___">
+                         <br>
+                         <br>            
+                         
+                         <label for="email">Email:(*)</label>
+                         <br>
+                         <input id="email" required type="email" placeholder="email@example.com.br">
+                         <br>
+                         <br>
+                         
+                         <label for="subject">Assunto:(*)</label>
+                         <br>
+                         <input id="subject" required type="text" placeholder="Digite tema do assunto:">
+                         <br>
+                         <br>
+                         
+                         <label for="message">Mensagem:(*)</label>
+                         <br>
+                         <textarea name="message" id="message" cols="20" rows="10" placeholder="Escreva aqui sua mensagem:"></textarea>
+                         <br>
+                         <br>
+                         
+                         <button type="reset">Limpar</button>
+                         <button type="submit">Enviar</button>
+                     </fieldset>
+                 </form>
+            </article>
+            <article>
+                <ul>
+                    <li>
+                        <a href="https://github.com/matheusLdev">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+5521980729950">Whatsapp</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">LinkedIn</a>
+                    </li>
+                </ul>  
+            </article>
         </section>
-    </main>
-    <section>
-        <p>Aqui é a sessão de projetos.</p>
-    </section>
-    <section>
-        <p>Aqui é a sessão do formulário para contatos e outros meios de contato.</p>
-    </section>
-    <footer>
-        <p>Aqui é o rodapé(copyright), terá um botão de voltar ao início da página e um agradecimento.</p>
-    </footer>
-</body>
+        <!---end of contact-->
+        <!---start of footer-->
+        <footer>
+            <nav>
+                <ul>
+                    <h3>MENU</h3>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SOBRE MIM</a></li>
+                    <li><a href="#">PROJETOS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+            <p>Copyright © 2023 MathGo Dev</p>
+        </footer>
+        <!---end of footer-->
+
+    </body>
 </html>
