@@ -5,7 +5,11 @@
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    font-family: "Calibri";
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body{
+    font-size: 18px;
 }
 
 img {
@@ -28,12 +32,33 @@ body {
 
 /*header style start*/
 
+#header-menu {
+    width: 50%;
+    align-items: center;
+}
+
+#header-menu a {
+    color: white;
+}
+
+#header-menu a:hover {
+    font-size: 1.5em;
+    color: dodgerblue;
+    border-bottom: 2px solid darkblue;
+}
+
 /*end of header style*/
 
 /*About me section style start*/
 main {
-    display: flex;    
+    display: flex;
+    width: 100%;
 }
+
+#about-me, #skill{
+    width: 50%;
+}
+
 /*End of the about me section style*/
 
 /*Start of projects section style*/
