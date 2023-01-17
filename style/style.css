@@ -1,12 +1,52 @@
+/*Beginning of style in general*/
 *{
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: black;
     margin: 0 auto;
-    padding: 0 0;
+    padding: 0;
+    font-family: "Calibri";
 }
 
 img {
-    width: 80px;
+    width: 100px;
 }
+ul { 
+    display: flex;
+}
+
+body {
+    background-image: radial-gradient(white, lightblue,darkblue);
+}
+
+/*End of style in general/
+
+/*header style start*/
+header{
+}
+/*end of header style*/
+
+/*About me section style start*/
+main {
+    display: flex;    
+}
+/*End of the about me section style*/
+
+/*Start of projects section style*/
+.container {
+    display: flex;
+}
+/*End of projects section style*/
+
+/*Start of contacts section style*/
+#form-contact {
+    background-color: white;
+    width: 20%;
+}
+/*End of contacts section style*/
+
+/*Footer style start*/
+footer{
+    display: flex;
+}
+/*End of footer style*/

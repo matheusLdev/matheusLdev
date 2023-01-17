@@ -12,17 +12,17 @@
         <header>
             <h1>Matheus Gonçalves - Web Developer</h1>
             <nav>
-                <ul>
+                <ul id="header-menu">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SOBRE MIM</a></li>
-                    <li><a href="#"><img src="imagens/logo-mathgo.png"/></a></li>
+                    <li><a href="#"><img src="imagens/logo-mathgo.png" alt="logo-mathgo"/></a></li>
                     <li><a href="#">PROJETOS</a></li>
                     <li><a href="#">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
         <!---end of header-->
-        <!---end of header-->
+        
         <!---start of about me-->
         <main>
             <section id="about-me">
@@ -34,14 +34,14 @@
             <section id="skill">
                 <h2>Minhas skills!</h2>
                 <ul>
-                    <li><img src="imagens/logo-html.png"/></li>
-                    <li><img src="imagens/logo-css.png"/></li>
-                    <li><img src="imagens/logo-bootstrap.png"/></li>
-                    <li><img src="imagens/logo-js.png"/></li>
-                    <li><img src="imagens/logo-react.png"/></li>
-                    <li><img src="imagens/logo-nodejs.png"/></li>
-                    <li><img src="imagens/logo-php.png"/></li>
-                    <li><img src="imagens/logo-mysql.png"/></li>
+                    <li><img src="imagens/logo-html.png" alt="logo-html"/></li>
+                    <li><img src="imagens/logo-css.png" alt="logo-css"/></li>
+                    <li><img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/></li>
+                    <li><img src="imagens/logo-js.png" alt="logo-javascript"/></li>
+                    <li><img src="imagens/logo-react.png" alt="logo-react"/></li>
+                    <li><img src="imagens/logo-nodejs.png" alt="logo-nodejs"/></li>
+                    <li><img src="imagens/logo-php.png" alt="logo-php"/></li>
+                    <li><img src="imagens/logo-mysql.png" alt="logo-mysql"/></li>
                 </ul>
                 <p>
                     Além dessas skills, possuo conhecimentos em SASS, TypeScript, construção e consumo de API, IONIC, jQuery e WordPress. Na minha trilha de evolução vou estudar Angular, Vue e python. O aprendizado não pode parar.
@@ -49,94 +49,118 @@
             </section>
         </main>
         <!---end of about me-->
+        
         <!---start of projects-->
         <section id="project">
-            <h2>Veja um pouco dos meus projetos realizados:</h2>
-            <article class="projects">
-                <h3>Em breve!</h3>
-                <p>Trabalhando nisso.</p>
-            </article>
-            <article class="projects">
-                <h3>Em breve!</h3>
-                <p>Trabalhando nisso.</p>
-            </article>
-            <article class="projects">
-                <h3>Em breve!</h3>
-                <p>Trabalhando nisso.</p>
-            </article>
+            <div class="container">
+                <h2>Veja um pouco dos meus projetos realizados:</h2>
+                <div class="card-container">
+                    <article class="projects">
+                        <h3>Em breve!</h3>
+                        <p>Trabalhando nisso.</p>
+                    </article>
+                    <article class="projects">
+                        <h3>Em breve!</h3>
+                        <p>Trabalhando nisso.</p>
+                    </article>
+                    <article class="projects">
+                        <h3>Em breve!</h3>
+                        <p>Trabalhando nisso.</p>
+                    </article>
+                    <article class="projects">
+                        <h3>Em breve!</h3>
+                        <p>Trabalhando nisso.</p>
+                    </article>
+                </div>
+            </div>
             <a href="#projetos">Ver mais</a>
         </section>
         <!---end of projects-->
+        
         <!---start of contact-->
         <section id="contact">
-            <h2>Vamos conversar ?</h2>
-            <article>
-                <form action="">
-                    <fieldset disabled>
-                         <legend>Funcionará em breve!</legend>
-                         
-                         <label for="name">Nome:(*)</label>
-                         <br>
-                         <input id="name" required type="text" placeholder="Digite seu nome:">
-                         <br>
-                         <br>            
-                         
-                         <label for="telefone">Telefone:</label>
-                         <br>
-                         <input id="telefone" type="text" placeholder="(__)_____-___">
-                         <br>
-                         <br>            
-                         
-                         <label for="email">Email:(*)</label>
-                         <br>
-                         <input id="email" required type="email" placeholder="email@example.com.br">
-                         <br>
-                         <br>
-                         
-                         <label for="subject">Assunto:(*)</label>
-                         <br>
-                         <input id="subject" required type="text" placeholder="Digite tema do assunto:">
-                         <br>
-                         <br>
-                         
-                         <label for="message">Mensagem:(*)</label>
-                         <br>
-                         <textarea name="message" id="message" cols="20" rows="10" placeholder="Escreva aqui sua mensagem:"></textarea>
-                         <br>
-                         <br>
-                         
-                         <button type="reset">Limpar</button>
-                         <button type="submit">Enviar</button>
-                     </fieldset>
-                 </form>
-            </article>
-            <article>
-                <ul>
-                    <li>
-                        <a href="https://github.com/matheusLdev">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/+5521980729950">Whatsapp</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">LinkedIn</a>
-                    </li>
-                </ul>  
-            </article>
+            <h2>Vamos conversar ? Me chama lá</h2>
+            <div class="container">
+                <article>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/matheusLdev">
+                                <img src="/imagens/logo-github.png" alt="logo-github">
+                                <p class="social-media">GitHub</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="https://wa.me/+5521980729950">
+                                <img src="/imagens/logo-wpp.png"> 
+                                <p class="social-media">Whatsapp</p>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">
+                                <img src="/imagens/logo-linkedin.png" alt="logo-linkedin">
+                                <p class="social-media">LinkedIn</p>
+                            </a>
+                        </li>
+                    </ul>  
+                </article>
+                <article id="form-contact">
+                    <form action="">
+                        <fieldset disabled>
+                            <legend>Funcionará em breve!</legend>
+                                
+                            <label for="name">Nome:(*)</label>
+                            <br>
+                            <input id="name" required type="text" placeholder="Digite seu nome:">
+                            <br>
+                            <br>            
+                                
+                            <label for="telefone">Telefone:</label>
+                            <br>
+                            <input id="telefone" type="text" placeholder="(__)_____-___">
+                            <br>
+                            <br>            
+                                
+                            <label for="email">Email:(*)</label>
+                            <br>
+                            <input id="email" required type="email" placeholder="email@example.com.br">
+                            <br>
+                            <br>
+                                
+                            <label for="subject">Assunto:(*)</label>
+                            <br>
+                            <input id="subject" required type="text" placeholder="Digite tema do assunto:">
+                            <br>
+                            <br>
+                                
+                            <label for="message">Mensagem:(*)</label>
+                            <br>
+                            <textarea name="message" id="message" cols="20" rows="10" placeholder="Escreva aqui sua mensagem:"></textarea>
+                            <br>
+                            <br>
+                                
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </div> 
         </section>
         <!---end of contact-->
+        
         <!---start of footer-->
         <footer>
             <nav>
                 <ul>
-                    <h3>MENU</h3>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SOBRE MIM</a></li>
                     <li><a href="#">PROJETOS</a></li>
                     <li><a href="#">CONTATO</a></li>
                 </ul>
             </nav>
-            <p>Copyright © 2023 MathGo Dev</p>
+            <div>
+                <p>Copyright © 2023 MathGo Dev</p>
+            </div>
+            <button type="button">Voltar ao Início</button>
         </footer>
         <!---end of footer-->
 
