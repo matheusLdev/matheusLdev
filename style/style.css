@@ -9,21 +9,25 @@
 }
 
 img {
-    width: 100px;
+    width: 180px;
 }
 ul { 
     display: flex;
 }
 
 body {
-    background-image: radial-gradient(white, lightblue,darkblue);
+    background-image: radial-gradient(antiquewhite, #B03F3F, #1E0000);
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }
 
 /*End of style in general/
 
 /*header style start*/
-header{
-}
+
 /*end of header style*/
 
 /*About me section style start*/
@@ -33,14 +37,21 @@ main {
 /*End of the about me section style*/
 
 /*Start of projects section style*/
-.container {
-    display: flex;
+
+
+.projects{
+    background-color: antiquewhite;
+    width: 900px;
+    height: 150px;
+    margin-top: 20px;
 }
 /*End of projects section style*/
 
 /*Start of contacts section style*/
+
+
 #form-contact {
-    background-color: white;
+    background-color: antiquewhite;
     width: 20%;
 }
 /*End of contacts section style*/
