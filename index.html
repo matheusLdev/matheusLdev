@@ -3,16 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matheus Gonçalves">
+        <meta name="description" content="É um website de portfólio de programador.">
+
         <link type="text/css" rel="stylesheet" href="style/style.css">
+        <link rel="icon" href="imagens/favicon.png">
+        
         <title>MathGo - Developer</title>
     </head>
     <body>
         <!---start of header-->
         <header>
             <h1>Matheus Gonçalves - Web Developer</h1>
-            <nav id="header-nav">
-                <ul id="header-menu">
+            <ul id="contacts">
+                <li class="logo-contact">
+                    <a href="https://github.com/matheusLdev">
+                        <img src="imagens/logo-github.png" alt="logo-github">
+                    </a>
+                </li>
+                <li class="logo-contact">
+                    <a href="https://wa.me/+5521980729950">
+                        <img src="imagens/logo-wpp.png" alt="logo-wpp">
+                    </a>
+                </li>
+                <li class="logo-contact">
+                    <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">
+                        <img src="imagens/logo-linkedin.png" alt="logo-linkedin">
+                    </a>
+                </li>
+            </ul>
+            <nav>
+                <ul id="menu">
                     <li>
                         <a href="#">HOME</a>
                     </li>
@@ -20,7 +43,10 @@
                         <a href="#">SOBRE MIM</a>
                     </li>
                     <li>
-                        <a href="#" id="logo-hover"><img src="imagens/logo-mathgo.png" alt="logo-mathgo"/></a></li>
+                        <a id="logo" href="#">
+                            <img src="imagens/logo-mathgo.png" alt="logo-mathgo"/>
+                        </a>
+                    </li>
                     <li>
                         <a href="#">PROJETOS</a>
                     </li>
@@ -28,27 +54,29 @@
                         <a href="#">CONTATO</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> 
         </header>
         <!---end of header-->
         
         <!---start of about me-->
         <main>
             <section id="about-me">
-                <h2>Olá, tudo bem?</h2>
+                <div>
+                    <img src="imagens/my-photo.png" alt="photo-matheus"/>
+                    <h2>Olá, tudo bem?</h2>
+                </div>
                 <p>
                     Sou Matheus Gonçalves, desenvolvedor web. Apaixonado por tecnologia, games e esportes. Tenho como meus pontos fortes organização, atento aos detalhes, facilidade de adaptação e aprendizado. Possuo experiência com liderança e treinamento de equipe de vendas de souvenirs, no setor de turismo. Atualmente estou buscando minha oportunidade como desenvolvedor web.
                 </p>
+                
             </section>
             <section id="skill">
-                <h2>Minhas skills!</h2>
-                <ul class="list-skills">
+                <h2>Minhas skills:</h2>
+                <ul id="list-skills">
                     <li><img src="imagens/logo-html.png" alt="logo-html"/></li>
                     <li><img src="imagens/logo-css.png" alt="logo-css"/></li>
                     <li><img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/></li>
                     <li><img src="imagens/logo-js.png" alt="logo-javascript"/></li>
-                </ul>
-                <ul class="list-skills">
                     <li><img src="imagens/logo-react.png" alt="logo-react"/></li>
                     <li><img src="imagens/logo-nodejs.png" alt="logo-nodejs"/></li>
                     <li><img src="imagens/logo-php.png" alt="logo-php"/></li>
@@ -62,59 +90,54 @@
         <!---end of about me-->
         
         <!---start of projects-->
-        <section id="project">
-            <div class="container">
+        <section>
+            <div>
                 <h2>Veja um pouco dos meus projetos realizados:</h2>
-                <div class="card-container">
-                    <article class="projects">
+                <div>
+                    <article>
                         <h3>Em breve!</h3>
                         <p>Trabalhando nisso.</p>
                     </article>
-                    <article class="projects">
+                    <article>
                         <h3>Em breve!</h3>
                         <p>Trabalhando nisso.</p>
                     </article>
-                    <article class="projects">
+                    <article>
                         <h3>Em breve!</h3>
                         <p>Trabalhando nisso.</p>
                     </article>
-                    <article class="projects">
+                    <article>
                         <h3>Em breve!</h3>
                         <p>Trabalhando nisso.</p>
                     </article>
                 </div>
             </div>
-            <a href="#projetos">Ver mais</a>
+            <a href="#">Ver mais</a>
         </section>
         <!---end of projects-->
         
         <!---start of contact-->
-        <section id="contact">
+        <section>
             <h2>Vamos conversar ?</h2>
-            <div class="container">
-                <article>
-                    <ul id="social-media">
+                    <ul>
                         <li>
                             <a href="https://github.com/matheusLdev">
-                                <img src="/imagens/logo-github.png" alt="logo-github">
-                                <p class="social-media">GitHub</p>
+                                <p>GitHub</p>
                             </a>
                         </li>
                         <li>
-                                <a href="https://wa.me/+5521980729950">
-                                <img src="/imagens/logo-wpp.png"> 
-                                <p class="social-media">Whatsapp</p>
-                                </a>
+                            <a href="https://wa.me/+5521980729950">
+                                <p>Whatsapp</p>
+                            </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">
-                                <img src="/imagens/logo-linkedin.png" alt="logo-linkedin">
-                                <p class="social-media">LinkedIn</p>
+                                <p>LinkedIn</p>
                             </a>
                         </li>
                     </ul>  
-                </article>
-                <article id="form-contact">
+                
+                <article>
                     <form action="">
                         <fieldset disabled>
                             <legend>Funcionará em breve!</legend>
@@ -153,8 +176,7 @@
                             <button type="submit">Enviar</button>
                         </fieldset>
                     </form>
-                </article>
-            </div> 
+                </article> 
         </section>
         <!---end of contact-->
         

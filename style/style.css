@@ -3,86 +3,123 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-body{
-    font-size: 18px;
-}
-
-img {
-    width: 180px;
-}
-ul { 
-    display: flex;
 }
 
 body {
+    max-width: 1280px;
     background-image: radial-gradient(antiquewhite, #B03F3F, #1E0000);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    margin: 0 auto;
+    padding: 0;
 }
-
-.container {
-    display: flex;
-    align-items: center;
-}
-
 /*End of style in general/
 
 /*header style start*/
-
-#header-menu {
-    width: 50%;
-    align-items: center;
+header{
+    max-width: 100%;
+    height: 200px;
+}
+h1{
+    display: none;
 }
 
-#header-menu a {
+#contacts{
+    display: flex;
+    justify-content: end;
+}
+.logo-contact{
+    margin: 0px 5px;
+}
+.logo-contact img {
+    width: 30px;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#menu a{
+    font-size: 20px;
     color: white;
 }
 
-#header-menu a:hover {
-    font-size: 1.5em;
-    color: dodgerblue;
-    border-bottom: 2px solid darkblue;
+#menu a:hover{
+    font-size: 22px;
+    color: skyblue;
+    border-bottom: 3px solid darkblue;
+    padding-bottom: 5px;
+}
+
+#logo img{
+    width: 100px;
+}
+#logo:hover img{
+    background-image: radial-gradient(white, darkblue);
+    border-radius: 50px;
 }
 
 /*end of header style*/
 
 /*About me section style start*/
-main {
+main{
     display: flex;
-    width: 100%;
+    width: 100%
 }
-
-#about-me, #skill{
+#about-me{
     width: 50%;
 }
+#about-me img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(0, 0, 80);
+    border-radius: 50%;
+}
 
+#about-me div{
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 10px;
+}
+
+#skill{
+    width: 50%;
+    border-left: 5px solid black;
+}
+#skill h2{
+    width: 200px;
+    margin: 0 auto;
+}
+#list-skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: 10px auto;
+}
+
+#list-skills img{
+    width: 100px;
+    margin: 10px 5px;
+    border-radius: 10px;
+}
+
+#skill p{
+    width: 380px;
+    margin: 0 auto;
+}
 /*End of the about me section style*/
 
 /*Start of projects section style*/
 
-
-.projects{
-    background-color: antiquewhite;
-    width: 900px;
-    height: 150px;
-    margin-top: 20px;
-}
 /*End of projects section style*/
 
 /*Start of contacts section style*/
 
-
-#form-contact {
-    background-color: antiquewhite;
-    width: 20%;
-}
 /*End of contacts section style*/
 
 /*Footer style start*/
-footer{
-    display: flex;
-}
+
 /*End of footer style*/
