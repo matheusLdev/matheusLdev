@@ -34,13 +34,13 @@
                     </a>
                 </li>
             </ul>
-            <nav>
-                <ul id="menu">
+            <nav class="shadow-container">
+                <ul id="menu" class="text-edition">
                     <li>
-                        <a href="#">HOME</a>
+                        <a class="list-menu" href="#">HOME</a>
                     </li>
                     <li>
-                        <a href="#">SOBRE MIM</a>
+                        <a class="list-menu"  href="#">SOBRE MIM</a>
                     </li>
                     <li>
                         <a id="logo" href="#">
@@ -48,10 +48,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">PROJETOS</a>
+                        <a class="list-menu"  href="#">PROJETOS</a>
                     </li>
                     <li>
-                        <a href="#">CONTATO</a>
+                        <a class="list-menu"  href="#">CONTATO</a>
                     </li>
                 </ul>
             </nav> 
@@ -60,139 +60,155 @@
         
         <!---start of about me-->
         <main>
-            <section id="about-me">
+            <section id="about-me" class="shadow-container">
+                <img src="imagens/my-photo.png" alt="photo-matheus"/>
                 <div>
-                    <img src="imagens/my-photo.png" alt="photo-matheus"/>
-                    <h2>Olá, tudo bem?</h2>
+                    <h2 class="title-edition">Olá, tudo bem?</h2>
+                    <p class="text-edition">
+                        Sou Matheus Gonçalves, desenvolvedor web. Apaixonado por tecnologia, games e esportes. Tenho como meus pontos fortes organização, atento aos detalhes, facilidade de adaptação e aprendizado. Possuo experiência com liderança e treinamento de equipe de vendas de souvenirs, no setor de turismo. Atualmente estou buscando minha oportunidade como desenvolvedor web.
+                    </p>
                 </div>
-                <p>
-                    Sou Matheus Gonçalves, desenvolvedor web. Apaixonado por tecnologia, games e esportes. Tenho como meus pontos fortes organização, atento aos detalhes, facilidade de adaptação e aprendizado. Possuo experiência com liderança e treinamento de equipe de vendas de souvenirs, no setor de turismo. Atualmente estou buscando minha oportunidade como desenvolvedor web.
-                </p>
-                
             </section>
-            <section id="skill">
-                <h2>Minhas skills:</h2>
+            <section id="skill" class="shadow-container">
+                <h2 class="title-edition">Minhas skills:</h2>
                 <ul id="list-skills">
                     <li><img src="imagens/logo-html.png" alt="logo-html"/></li>
                     <li><img src="imagens/logo-css.png" alt="logo-css"/></li>
                     <li><img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/></li>
+                    <li><img src="imagens/logo-sass.png" alt="logo-sass"/></li>
+                    <li><img src="imagens/logo-nodejs.png" alt="logo-nodejs"/></li>
                     <li><img src="imagens/logo-js.png" alt="logo-javascript"/></li>
                     <li><img src="imagens/logo-react.png" alt="logo-react"/></li>
-                    <li><img src="imagens/logo-nodejs.png" alt="logo-nodejs"/></li>
-                    <li><img src="imagens/logo-php.png" alt="logo-php"/></li>
                     <li><img src="imagens/logo-mysql.png" alt="logo-mysql"/></li>
                 </ul>
-                <p>
-                    Além dessas skills, possuo conhecimentos em SASS, TypeScript, construção e consumo de API, IONIC, jQuery e WordPress. Na minha trilha de evolução vou estudar Angular, Vue e python. O aprendizado não pode parar.
+                <p class="text-edition">
+                    Além dessas habilidades, possuo conhecimentos em TypeScript, construção e consumo de API, IONIC, PHP, jQuery e WordPress. Na minha trilha de evolução tem Angular e Vue. O aprendizado não pode parar.
                 </p>
             </section>
         </main>
         <!---end of about me-->
         
         <!---start of projects-->
-        <section>
-            <div>
-                <h2>Veja um pouco dos meus projetos realizados:</h2>
-                <div>
-                    <article>
-                        <h3>Em breve!</h3>
-                        <p>Trabalhando nisso.</p>
-                    </article>
-                    <article>
-                        <h3>Em breve!</h3>
-                        <p>Trabalhando nisso.</p>
-                    </article>
-                    <article>
-                        <h3>Em breve!</h3>
-                        <p>Trabalhando nisso.</p>
-                    </article>
-                    <article>
-                        <h3>Em breve!</h3>
-                        <p>Trabalhando nisso.</p>
-                    </article>
-                </div>
+        <section id="project-container" class="shadow-container"> 
+            <h2 class="title-edition">Aqui estão alguns dos meus projetos e desafios:</h2>
+            <div id="cards-container">
+                <article class="card shadow-container">
+                    <div>
+                        <img src="imagens/project-contruction.png" alt="Projeto em construção">
+                    </div>
+                    <h3 class="title-edition">Projeto em construção</h3>
+                    <p class="text-edition">Estou trabalhando nisso.</p>
+                    <a class="text-edition transition" href="">Ver Repositório</a>
+                    <a class="text-edition transition" href="">Ver projeto</a>
+                </article>
+                <article class="card shadow-container">
+                    <div>
+                        <img src="imagens/project-contruction.png" alt="Projeto em construção">
+                    </div>
+                    <h3 class="title-edition">Projeto em construção</h3>
+                    <p class="text-edition">Estou trabalhando nisso.</p>
+                    <a class="text-edition transition" href="">Ver Repositório</a>
+                    <a class="text-edition transition" href="">Ver projeto</a>
+                </article>
+                <article class="card shadow-container">
+                    <div>
+                        <img src="imagens/project-contruction.png" alt="Projeto em construção">
+                    </div>
+                    <h3 class="title-edition">Projeto em construção</h3>
+                    <p class="text-edition">Estou trabalhando nisso.</p>
+                    <a class="text-edition transition" href="">Ver Repositório</a>
+                    <a class="text-edition transition" href="">Ver projeto</a>
+                </article>
+                <article class="card shadow-container">
+                    <div>
+                        <img src="imagens/project-contruction.png" alt="Projeto em construção">
+                    </div>
+                    <h3 class="title-edition">Projeto em construção</h3>
+                    <p class="text-edition">Estou trabalhando nisso.</p>
+                    <a class="text-edition transition" href="">Ver Repositório</a>
+                    <a class="text-edition transition" href="">Ver projeto</a>
+                </article>
             </div>
-            <a href="#">Ver mais</a>
+            <a href="#">Ver mais projetos!</a>
         </section>
         <!---end of projects-->
         
         <!---start of contact-->
-        <section>
-            <h2>Vamos conversar ?</h2>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/matheusLdev">
-                                <p>GitHub</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/+5521980729950">
-                                <p>Whatsapp</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">
-                                <p>LinkedIn</p>
-                            </a>
-                        </li>
-                    </ul>  
-                
-                <article>
-                    <form action="">
-                        <fieldset disabled>
-                            <legend>Funcionará em breve!</legend>
+        <section id="talk-me" class="shadow-container">
+            <div>
+                <h2 class="title-edition">Vamos conversar ?</h2>
+                <ul>
+                    <li class="list-social">
+                        <a href="https://github.com/matheusLdev">
+                            <img src="imagens/logo-github.png" alt="logo-github">
+                        </a>
+                    </li>
+                    <li class="list-social">
+                        <a href="https://wa.me/+5521980729950">
+                            <img src="imagens/logo-wpp.png" alt="logo-wpp">
+                        </a>
+                    </li>
+                    <li class="list-social">
+                        <a href="https://www.linkedin.com/in/dev-matheus-goncalves/">
+                            <img src="imagens/logo-linkedin.png" alt="logo-linkedin">
+                        </a>
+                    </li>
+                </ul>           
+            </div>
+            <article id="email-form">
+                <form class="text-edition" action="">
+                    <fieldset disabled>
+                        <legend>Funcionará em breve!</legend>
                                 
-                            <label for="name">Nome:(*)</label>
-                            <br>
-                            <input id="name" required type="text" placeholder="Digite seu nome:">
-                            <br>
-                            <br>            
+                        <label for="name">Nome:(*)</label>
+                        <br>
+                        <input id="name" required type="text" placeholder="Digite seu nome:">
+                        <br>
+                        <br>            
                                 
-                            <label for="telefone">Telefone:</label>
-                            <br>
-                            <input id="telefone" type="text" placeholder="(__)_____-___">
-                            <br>
-                            <br>            
+                        <label for="telefone">Telefone:</label>
+                        <br>
+                        <input id="telefone" type="text" placeholder="(__)_____-___">
+                        <br>
+                        <br>            
                                 
-                            <label for="email">Email:(*)</label>
-                            <br>
-                            <input id="email" required type="email" placeholder="email@example.com.br">
-                            <br>
-                            <br>
+                        <label for="email">Email:(*)</label>
+                        <br>
+                        <input id="email" required type="email" placeholder="email@example.com.br">
+                        <br>
+                        <br>
                                 
-                            <label for="subject">Assunto:(*)</label>
-                            <br>
-                            <input id="subject" required type="text" placeholder="Digite tema do assunto:">
-                            <br>
-                            <br>
+                        <label for="subject">Assunto:(*)</label>
+                        <br>
+                        <input id="subject" required type="text" placeholder="Digite tema do assunto:">
+                        <br>
+                        <br>
                                 
-                            <label for="message">Mensagem:(*)</label>
-                            <br>
-                            <textarea name="message" id="message" cols="20" rows="10" placeholder="Escreva aqui sua mensagem:"></textarea>
-                            <br>
-                            <br>
+                        <label for="message">Mensagem:(*)</label>
+                        <br>
+                        <textarea name="message" id="message" cols="20" rows="10" placeholder="Escreva aqui sua mensagem:"></textarea>
+                        <br>
+                        <br>
                                 
-                            <button type="reset">Limpar</button>
-                            <button type="submit">Enviar</button>
-                        </fieldset>
-                    </form>
-                </article> 
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </article> 
         </section>
         <!---end of contact-->
         
         <!---start of footer-->
-        <footer>
+        <footer class="shadow-container">
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SOBRE MIM</a></li>
-                    <li><a href="#">PROJETOS</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li class="space-list"><a class="text-edition" href="#">HOME</a></li>
+                    <li class="space-list"><a class="text-edition" href="#">SOBRE MIM</a></li>
+                    <li class="space-list"><a class="text-edition" href="#">PROJETOS</a></li>
+                    <li class="space-list"><a class="text-edition" href="#">CONTATO</a></li>
                 </ul>
             </nav>
-            <div>
-                <p>Copyright © 2023 MathGo Dev</p>
-            </div>
+            <p class="text-edition">Copyright © 2023 MathGo Dev</p>
             <button type="button">Voltar ao Início</button>
         </footer>
         <!---end of footer-->

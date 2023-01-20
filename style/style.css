@@ -14,6 +14,22 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+
+.title-edition{
+    color: whitesmoke;
+    padding: 10px 10px 0px;
+    text-shadow: 0px 0px 20px black;
+}
+.text-edition{
+    color: whitesmoke;
+    padding: 0 10px;
+    text-shadow: 0px 0px 20px black;
+}
+.shadow-container{
+    box-shadow: 0 0 10px 2px black;
+    border-radius: 10px;
+}
+
 /*End of style in general/
 
 /*header style start*/
@@ -28,38 +44,51 @@ h1{
 #contacts{
     display: flex;
     justify-content: end;
+    height: 40px;
 }
 .logo-contact{
+    width: 40px;
     margin: 0px 5px;
 }
 .logo-contact img {
     width: 30px;
 }
+.logo-contact img:hover{
+    width: 35px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    transition: all 1s;
+}
 
 #menu{
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#menu a{
+.list-menu{
     font-size: 20px;
     color: white;
 }
 
-#menu a:hover{
+.list-menu:hover{
     font-size: 22px;
     color: skyblue;
     border-bottom: 3px solid darkblue;
     padding-bottom: 5px;
+    transition: all 1s;
 }
 
 #logo img{
-    width: 100px;
+    width: 120px;
 }
-#logo:hover img{
-    background-image: radial-gradient(white, darkblue);
-    border-radius: 50px;
+#logo img:hover{
+    background-image: linear-gradient(white, darkblue);
+    width: 125px;
+    border-radius: 50%;
+    margin-top: 3px;
+    transition: all 1s;
 }
 
 /*end of header style*/
@@ -67,10 +96,14 @@ h1{
 /*About me section style start*/
 main{
     display: flex;
-    width: 100%
+    width: 100%;
 }
 #about-me{
     width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 0 10px;
 }
 #about-me img{
     width: 200px;
@@ -79,47 +112,136 @@ main{
     border-radius: 50%;
 }
 
-#about-me div{
-    display: flex;
-    align-items: flex-end;
-    margin: 0px 10px;
-}
-
 #skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
-    border-left: 5px solid black;
-}
-#skill h2{
-    width: 200px;
-    margin: 0 auto;
 }
 #list-skills{
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
-    margin: 10px auto;
-}
-
-#list-skills img{
-    width: 100px;
-    margin: 10px 5px;
-    border-radius: 10px;
-}
-
-#skill p{
-    width: 380px;
     margin: 0 auto;
 }
+#list-skills img{
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(whitesmoke, lightgray);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+}
+
 /*End of the about me section style*/
 
 /*Start of projects section style*/
+#project-container {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#project-container>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px black;
+    font-size: 20px;
+
+}
+#project-container>a:hover {
+    color: skyblue;
+    font-size: 24px;
+    font-weight: bolder;
+    transition: all 1s;
+}
+
+#cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+.card{
+    width: 20%;
+    height: 350px;
+    background-image: linear-gradient(white, lightcoral, darkred);
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.card div img{
+    width: 100%;
+    height: 150px;
+}
+.card a{
+    width: 160px;
+    height: 20px;
+    margin-top: 5px;
+}
+.card a:hover{
+    font-size: 20px;
+    color: skyblue;
+    border-bottom: 5px solid darkblue;
+    transition: all 1s;
+}
 
 /*End of projects section style*/
 
 /*Start of contacts section style*/
+#talk-me{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+}
 
+#talk-me div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-social{
+    width: 150px;
+    height: 120px;
+    margin: 10px 0px;
+}
+.list-social img{
+    width: 100px;
+}
+.list-social img:hover{
+    width: 110px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#email-form {
+    width: 50%;
+    margin: 10px 10px;
+}
 /*End of contacts section style*/
 
 /*Footer style start*/
-
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 15px;
+}
+.space-list{
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+}
+.space-list a:hover{
+    color: skyblue;
+    border-bottom: 5px solid darkblue;
+    font-size: 20px;
+    transition: all 1s;
+}
 /*End of footer style*/
