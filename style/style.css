@@ -16,13 +16,16 @@ body {
 }
 
 .title-edition{
+    text-align: center;
     color: whitesmoke;
     padding: 10px 10px 0px;
     text-shadow: 0px 0px 20px black;
 }
 .text-edition{
+    text-align: justify;
     color: whitesmoke;
-    padding: 0 10px;
+    padding: 10px 20px 0;
+    margin: 5px 10px;
     text-shadow: 0px 0px 20px black;
 }
 .shadow-container{
@@ -65,6 +68,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 35px;
 }
 
 .list-menu{
@@ -82,12 +86,13 @@ h1{
 
 #logo img{
     width: 120px;
+    margin: 10px auto;
 }
 #logo img:hover{
     background-image: linear-gradient(white, darkblue);
     width: 125px;
     border-radius: 50%;
-    margin-top: 3px;
+    margin-top: 5px;
     transition: all 1s;
 }
 
