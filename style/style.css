@@ -182,14 +182,12 @@ main{
     height: 150px;
 }
 .card a{
-    width: 160px;
+    width: 180px;
     height: 20px;
-    margin-top: 5px;
 }
 .card a:hover{
     font-size: 20px;
     color: skyblue;
-    border-bottom: 5px solid darkblue;
     transition: all 1s;
 }
 
@@ -239,14 +237,14 @@ footer{
     margin-bottom: 15px;
 }
 .space-list{
-    width: 150px;
+    width: 155px;
     height: 25px;
     margin: 5px;
 }
 .space-list a:hover{
     color: skyblue;
     border-bottom: 5px solid darkblue;
-    font-size: 20px;
+    font-size: 19px;
     transition: all 1s;
 }
 /*End of footer style*/
