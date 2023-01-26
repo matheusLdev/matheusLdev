@@ -4,7 +4,6 @@
     text-decoration: none;
     list-style: none;
 }
-
 body {
     max-width: 1280px;
     background-image: radial-gradient(antiquewhite, #B03F3F, #1E0000);
@@ -34,39 +33,23 @@ body {
 
 /*header style start*/
 header{
-    max-width: 100%;
-    height: 200px;
+    width: 100%;
 }
 h1{
     display: none;
 }
-
-#talk-me{
-    display: flex;
-    justify-content: end;
-    height: 40px;
-    margin-right: 15px;
+#mobile-btn{
+    display: none;
 }
-.logo-contact{
-    width: 40px;
-    margin: 0px 5px;
-}
-.logo-contact img {
-    width: 30px;
-}
-.logo-contact img:hover{
-    width: 35px;
-    border: 2px solid lightgrey;
-    border-radius: 50%;
-    transition: all 1s;
-}
-
 #menu{
     height: 130px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 40px;
+    margin-right: 55px;
+}
+#menu li{
+    width: 150px;
 }
 
 .list-menu{
@@ -122,14 +105,14 @@ main{
     padding: 10px 20px;
 }
 #list-skills{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 #list-skills img{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     background-image: radial-gradient(whitesmoke, lightgray);
     border-radius: 15px;
     margin: 5px;
@@ -195,38 +178,30 @@ main{
 
 /*Start of contacts section style*/
 #contact{
-    display: flex;
-    justify-content: center;
     width: 100%;
-    margin: 20px auto;
+    margin-top: 20px;
     padding: 30px;
 }
-
-#contact div {
-    width: 50%;
+#contact ul{
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .list-social{
-    width: 150px;
-    height: 120px;
-    margin: 50px 0;
+    width: 70px;
 }
 .list-social img{
-    width: 100px;
+    width: 60px;
 }
 .list-social img:hover{
-    width: 110px;
-    border: 2px solid lightgrey;
+    width: 70px;
+    border: 2px solid darkred;
     border-radius: 50%;
     transition: all 1s;
 }
 
 #email-form {
-    width: 50%;
-    height: 700px;
+    width: 100%;
 }
 
 fieldset{
@@ -238,27 +213,28 @@ label{
     cursor: pointer;
 }
 input{
-    width: 85%;
-    margin: 10px auto;
+    width: 90%;
+    margin-top: 10px;
     padding: 5px 0 5px 5px;
     height: 30px;
     border: 2px solid darkred;
     border-radius: 5px;
 }
 textarea{
-    width: 95%;
-    margin: 10px auto;
-    padding-left: 5px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 0 5px 5px;
     border: 2px solid darkred;
     border-radius: 5px;
 }
 
-input:active, textarea:active{
-    border: 2px solid darkblue;
+#email-form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-
 #email-form button{
-    width: 145px;
+    width: 120px;
     height: 50px;
     cursor: pointer;
     background: radial-gradient(darkred,red);
@@ -267,7 +243,6 @@ input:active, textarea:active{
     color: white;
     font-size: 16px;
     font-weight: bolder;
-    margin-left: 85px;
 }
 #email-form button:hover{
     background: radial-gradient(red,darkred);
@@ -279,20 +254,20 @@ input:active, textarea:active{
 
 /*Footer style start*/
 footer{
+    width: 100%;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 160px;
-    padding: 5px 0;
-    margin: 15px auto;
+    padding: 10px;
+    margin: 15px 0;
 }
 footer ul{
     display: flex;
 }
 .space-list{
-    width: 155px;
+    width: 120px;
     height: 25px;
     margin: 5px;
     font-size: 14px;
@@ -309,8 +284,23 @@ footer p {
 }
 /*End of footer style*/
 
-/**/
+/*Start style page project*/
 #page-project{
     flex-direction: column;
 }
-/**/
+/*End style page project*/
+
+/*Beginning of responsiveness treatment*/
+@media(max-width: 600px){
+    #mobile-btn{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+}
+
+
+
+
+/*End of responsiveness treatment*/
