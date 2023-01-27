@@ -17,21 +17,24 @@
         <!---start of header-->
         <header>
             <h1>Matheus Gonçalves - Web Developer</h1>
-            <nav class="shadow-container">
-                <ul id="menu" class="text-edition">
+            <nav id="navegation" class="shadow-container">
+                <button aria-label="Abrir Menu" id="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false" class="text-edition">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" class="text-edition" role="menu">
                     <li>
                         <a class="list-menu" href="index.html">HOME</a>
                     </li>
                     <li>
                         <a class="list-menu" href="index.html#about">SOBRE MIM</a>
                     </li>
-                    <li>
+                    <li id="list-logo">
                         <a id="logo" href="#">
                             <img src="imagens/logo-mathgo.png" alt="logo-mathgo"/>
                         </a>
                     </li>
                     <li>
-                        <a class="list-menu" href="#project">PROJETOS</a>
+                        <a class="list-menu" href="index.html#project">PROJETOS</a>
                     </li>
                     <li>
                         <a class="list-menu" href="index.html#contact">CONTATO</a>
@@ -138,5 +141,7 @@
             <p class="text-edition">Copyright © 2023 MathGo Dev</p>
         </footer>
         <!---end of footer-->
+
+        <script src="script.js"></script>
     </body>
 </html>

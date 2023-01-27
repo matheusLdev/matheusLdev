@@ -11,22 +11,25 @@
         <link type="text/css" rel="stylesheet" href="style/style.css">
         <link rel="icon" href="imagens/favicon.png">
         
-        <title>MathGo - Developer</title>
+        
+        <title>MathGo Dev</title>
     </head>
     <body>
         <!---start of header-->
         <header>
             <h1>Matheus Gonçalves - Web Developer</h1>
-            <nav class="shadow-container">
-                <button id="mobile-btn">Menu</button>
-                <ul id="menu" class="text-edition">
+            <nav id="navegation" class="shadow-container">
+                <button aria-label="Abrir Menu" id="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false" class="text-edition">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" class="text-edition" role="menu">
                     <li>
                         <a class="list-menu" href="#">HOME</a>
                     </li>
                     <li>
                         <a class="list-menu" href="#about">SOBRE MIM</a>
                     </li>
-                    <li>
+                    <li id="list-logo">
                         <a id="logo" href="#">
                             <img src="imagens/logo-mathgo.png" alt="logo-mathgo"/>
                         </a>
@@ -49,17 +52,16 @@
                 <div>
                     <h2 class="title-edition">Olá, tudo bem?</h2>
                     <p class="text-edition">
-                        Olá, eu sou o Matheus Gonçalves, sou Desenvolvedor Full
-                        Stack, tendo expertise em HTML, CSS, IONIC, React, TypeScript, SQL, SASS, Node.js, JavaScript e entre outras. Com capacidade técnica e analítica de encontrar e desenvolver soluções para várias demandas.
+                        Sou o Matheus Gonçalves, Desenvolvedor Full Stack, tendo expertise em HTML, CSS, IONIC, React, TypeScript, SQL, SASS, Node.js, JavaScript e entre outras. Com capacidade técnica e analítica de encontrar e desenvolver soluções para várias demandas.
                     </p>
                     <p class="text-edition">
-                        Além disso, estou melhorando meu inglês na Udemy, já consigo ler e escrever algumas frases em inglês, tenho como meta ser fluente em breve. Sou organizado, dedicado, gosto de aprender, apaixonado por trazer melhorias, solucionar problemas e pelo lema "juntos vamos mais longe".
+                        Além disso, estou melhorando meu inglês na Udemy, já consigo ler e escrever algumas frases, tenho como meta ser fluente em breve. Sou organizado, dedicado, gosto de aprender, apaixonado por trazer melhorias, solucionar problemas e pelo lema "juntos vamos mais longe".
                     </p>
                 </div>
             </section>
             <section id="skill" class="shadow-container">
                 <h2 class="title-edition">Minhas skills:</h2>
-                <ul id="list-skills">
+                <ul id="list-skill">
                     <li><img src="imagens/logo-html.png" alt="logo-html"/></li>
                     <li><img src="imagens/logo-css.png" alt="logo-css"/></li>
                     <li><img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/></li>
@@ -194,5 +196,7 @@
         </footer>
         <!---end of footer-->
 
+        <script src="script.js"></script>
     </body>
+    
 </html>

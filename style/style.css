@@ -104,19 +104,19 @@ main{
     justify-content: center;
     padding: 10px 20px;
 }
-#list-skills{
-    width: 90%;
+#list-skill{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-items: center;
 }
-#list-skills img{
-    width: 80px;
-    height: 80px;
+#list-skill img{
+    width: 90px;
+    height: 90px;
     background-image: radial-gradient(whitesmoke, lightgray);
     border-radius: 15px;
     margin: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /*End of the about me section style*/
@@ -292,15 +292,94 @@ footer p {
 
 /*Beginning of responsiveness treatment*/
 @media(max-width: 600px){
-    #mobile-btn{
-        display: block;
+    #navegation{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 50px;
     }
     #menu{
+        width: 100%;
+        background: linear-gradient(darkred, black);
+        display: block;
+        margin-top: 30px;
+        border: 3px solid black;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        transition: .8s;
+        z-index: 1;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        border-radius: 5px;
+    }
+    #navegation.active #menu{
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #list-logo{
         display: none;
     }
+    #menu li{
+        height: 30px;
+        position: relative;
+        right: 50px;
+        margin: 10px;
+        border-bottom: 5px solid black;
+    }
+    #menu a:hover{
+        text-decoration: none;
+    }
+    #mobile-btn{
+        display: flex;
+        border: none;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+        gap: 10px;
+    }
+    #hamburger{
+        border-top: 3px solid;
+        width: 20px;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #navegation.active #hamburger{
+        border-top-color: transparent;
+    }
+    #navegation.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #navegation.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -8px;
+    }
+    main{
+        display: block;
+        margin-top: 15px;
+    }
+    #about, #skill{
+        width: 100%;
+    }
+    #about{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    #list-skill img{
+        width: 80px;
+        height: 80px;
+    }
+
 }
-
-
-
 
 /*End of responsiveness treatment*/
