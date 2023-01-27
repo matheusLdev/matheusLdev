@@ -334,6 +334,7 @@ footer p {
     }
     #mobile-btn{
         display: flex;
+        padding: 10px;
         border: none;
         background: none;
         font-size: 16px;
@@ -364,6 +365,8 @@ footer p {
         transform: rotate(-135deg);
         top: -8px;
     }
+
+    /*Start responsive about and skill*/
     main{
         display: block;
         margin-top: 15px;
@@ -379,6 +382,7 @@ footer p {
         width: 80px;
         height: 80px;
     }
+    /*End responsive about and skill*/
 
 }
 
