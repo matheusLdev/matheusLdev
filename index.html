@@ -18,7 +18,7 @@
         <!---start of header-->
         <header>
             <h1>Matheus Gonçalves - Web Developer</h1>
-            <nav id="navegation" class="shadow-container">
+            <nav id="navegation">
                 <button aria-label="Abrir Menu" id="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false" class="text-edition">Menu
                     <span id="hamburger"></span>
                 </button>
@@ -46,34 +46,51 @@
         <!---end of header-->
         
         <!---start of about me-->
-        <main>
-            <section id="about" class="shadow-container">
-                <img src="imagens/my-photo.png" alt="photo-matheus"/>
+        <main id="about" class="shadow-container">
+            <div id="about-container">
+                <img id="my-photo" src="imagens/my-photo.png" alt="photo-matheus"/>
                 <div>
                     <h2 class="title-edition">Olá, tudo bem?</h2>
                     <p class="text-edition">
-                        Sou o Matheus Gonçalves, Desenvolvedor Full Stack, sou organizado, dedicado, gosto de aprender, apaixonado por trazer melhorias, solucionar problemas e pelo lema "juntos vamos mais longe". 
+                        Sou Matheus Gonçalves, desenvolvedor full stack, tenho como minhas soft skills de destaque: perseverança, resiliência, organização, sentimento de dono e proatividade. Me faz brilhar os olhos à transformação digital que estamos vivendo, estar em um ambiente inovador, com pessoas colaborativas trazendo melhorias e solucionando problemas.
                     </p>
                 </div>
-            </section>
-            <section id="skill" class="shadow-container">
-                <h2 class="title-edition">Minhas skills:</h2>
-                <ul id="list-skill">
-                    <li><img src="imagens/logo-html.png" alt="logo-html"/></li>
-                    <li><img src="imagens/logo-css.png" alt="logo-css"/></li>
-                    <li><img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/></li>
-                    <li><img src="imagens/logo-sass.png" alt="logo-sass"/></li>
-                    <li><img src="imagens/logo-ionic.png" alt="logo-ionic"/></li>
-                    <li><img src="imagens/logo-nodejs.png" alt="logo-nodejs"/></li>
-                    <li><img src="imagens/logo-js.png" alt="logo-javascript"/></li>
-                    <li><img src="imagens/logo-typescript.png" alt="logo-typescript"/></li>
-                    <li><img src="imagens/logo-react.png" alt="logo-react"/></li>
-                    <li><img src="imagens/logo-mysql.png" alt="logo-mysql"/></li>
-                </ul>
-                <p class="text-edition">
-                    Além dessas habilidades, possuo conhecimentos em construção e consumo de API, PHP, jQuery e WordPress. Na minha trilha de evolução tem Angular e Vue. O aprendizado não pode parar.
-                </p>
-            </section>
+            </div>
+            <h2 class="title-edition">Minhas skills:</h2>
+            <div data-slide="slide" class="slide">
+                <div class="slide-items">
+                    <div>
+                        <img src="imagens/logo-html.png" alt="logo-html"/>
+                        <img src="imagens/logo-css.png" alt="logo-css"/>
+                        <img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/>
+                    </div>
+                    <div>
+                        <img src="imagens/logo-sass.png" alt="logo-sass"/>
+                        <img src="imagens/logo-js.png" alt="logo-javascript"/>
+                        <img src="imagens/logo-react.png" alt="logo-react"/>
+                    </div>
+                    <div>
+                        <img src="imagens/logo-typescript.png" alt="logo-typescript"/>
+                        <img src="imagens/logo-wordpress.png" alt="logo-wordpress">
+                        <img src="imagens/logo-ionic.png" alt="logo-ionic"/>
+                    </div>
+                    <div>
+
+                        <img src="imagens/logo-nodejs.png" alt="logo-nodejs"/>
+                        <img src="imagens/logo-php.png" alt="logo-php">
+                        <img src="imagens/logo-mysql.png" alt="logo-mysql"/>
+                    </div>
+                </div>
+                <nav class="slide-carousel">
+                    <button class="slide-prev">
+                        <img src="imagens/angulo-duplo-esquerdo.png" alt="seta-esquerda">
+                    </button>
+                    <button class="slide-next">
+                        <img src="imagens/angulo-duplo-direito.png" alt="seta-direita">
+                    </button>
+                    <div class="slide-thumb"></div>
+                </nav>
+            </div>
         </main>
         <!---end of about me-->
         
@@ -180,7 +197,7 @@
         <!---end of contact-->
         
         <!---start of footer-->
-        <footer class="shadow-container">
+        <footer>
             <nav>
                 <ul>
                     <li class="space-list"><a class="text-edition" href="#">HOME</a></li>
@@ -193,6 +210,7 @@
         </footer>
         <!---end of footer-->
 
+        <script src="carousel_slide.js"></script>
         <script src="script.js"></script>
     </body>
     
