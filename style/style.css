@@ -280,13 +280,18 @@ header h1{
     padding: 30px;
 }
 #contact ul{
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 50px;
+    margin: 0 auto;
+    padding: 0;
 }
 .list-social{
-    width: 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 .list-social img{
     width: 60px;
