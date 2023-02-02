@@ -47,18 +47,17 @@ body {
 }
 
 .slide-items div{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 5px;
+    justify-content: space-between;
 }
 .slide-items img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: rgba(255, 255, 255, 0.7);
-    margin: 5px;
     padding: 5px;
     border-radius: 15px;
-    display: block;
 }
 
 .slide-carousel {
@@ -70,15 +69,17 @@ body {
 }
 .slide-carousel button{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    width: 15%;
+    width: 120px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 1);
     border-radius: 10px;
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0;
+}
+.slide-carousel button:hover{
+    opacity: 0.1;
 }
 .slide-carousel img{
-    width: 100%;
-    margin: 0px auto;
+    width: 80%;
 }
 .slide-next{
     justify-self: end;
@@ -128,11 +129,15 @@ body {
 /*End of style in general/
 
 /*header style start*/
-h1{
-    display: none;
-}
 header{
     width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+header h1{
+    display: none;
 }
 
 #navegation{
@@ -142,34 +147,42 @@ header{
     display: none;
 }
 #menu{
-    height: 150px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
-#menu li{
-    width: 180px;
+.list-menu{
+    width: 150px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.list-menu{
+.list-menu a{
     font-size: 20px;
     color: black;
+    margin: 0 auto;
+    padding: 0;
+
 }
 
-.list-menu:hover{
+.list-menu a:hover{
     font-size: 22px;
     text-decoration: 4px solid darkblue underline;
     transition: all 1s;
 }
 
-#logo img{
+.list-menu img{
     width: 120px;
-    background: white;
+    background: #ffffffbf;
     border: 2px solid darkblue;
-    border-radius: 50px;
+    border-radius: 20px;
 }
-#logo img:hover{
-    width: 130px;
+.list-menu img:hover{
     border-radius: 50%;
     transition: all 1s;
 }
@@ -202,7 +215,7 @@ header{
 /*End of the about me section style*/
 
 /*Start of projects section style*/
-#project, #challenge {
+#project {
     width: 100%;
     margin-top: 20px;
     padding: 10px 5px;
@@ -409,7 +422,9 @@ footer p{
         width: 100px;
         height: 100px;
     }
-
+    .slide-carousel button{
+        width: 100px;
+    }
     .space-list a{
         font-size: 14px;
     }
@@ -423,11 +438,15 @@ footer p{
 
 @media(max-width: 600px){
     /*Start style header and btn-hamburger*/
+    header{
+        width: 100%;
+        height: 50px;
+        padding: 0;
+    }
     #navegation{
         display: flex;
         align-items: center;
         justify-content: end;
-        height: 50px;
     }
     #menu{
         width: 100%;
@@ -453,17 +472,19 @@ footer p{
     #list-logo{
         display: none;
     }
-    #menu li{
+    .list-menu{
+        width: 100%;
         height: 30px;
-        position: relative;
-        right: 50px;
-        margin: 10px;
+        text-align: start;
+        margin-top: 10px;
         border-bottom: 5px solid black;
+        
     }
-    #menu a{
+    .list-menu a{
         color: white;
+        padding: 10px;
     }
-    #menu a:hover{
+    .list-menu a:hover{
         text-decoration: none;
     }
     #mobile-btn{
@@ -503,8 +524,11 @@ footer p{
 
     /*Start responsive about and skill*/
     .slide-items img{
-        width: 80px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
+    }
+    .slide-carousel button{
+        width: 60px;
     }
     /*End responsive about and skill*/
 
