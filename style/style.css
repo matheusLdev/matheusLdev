@@ -6,7 +6,7 @@
 }
 body {
     max-width: 1280px;
-    background-image: radial-gradient(antiquewhite, #B03F3F, #1E0000);
+    background-color: #CEDEF2;
     font-family: "Franklin Gothic Medium", sans-serif;
     font-size: 18px;
     color: black;
@@ -16,16 +16,17 @@ body {
 
 .title-edition{
     text-align: center;
-    color: whitesmoke;
-    text-shadow: 0px 0px 20px black;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 .text-edition{
     text-align: justify;
-    color: whitesmoke;
-    text-shadow: 0px 0px 20px black;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 .shadow-container{
-    box-shadow: 0 0 10px 2px black;
+    background: radial-gradient(#6997BF, #0B2740);
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
 
@@ -70,7 +71,7 @@ body {
 .slide-carousel button{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 15%;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 1);
     border-radius: 10px;
     cursor: pointer;
     opacity: 0.3;
@@ -152,22 +153,23 @@ header{
 
 .list-menu{
     font-size: 20px;
-    color: white;
+    color: black;
 }
 
 .list-menu:hover{
     font-size: 22px;
-    color: skyblue;
     text-decoration: 4px solid darkblue underline;
     transition: all 1s;
 }
 
 #logo img{
     width: 120px;
+    background: white;
+    border: 2px solid darkblue;
+    border-radius: 50px;
 }
 #logo img:hover{
-    background-image: linear-gradient(white, darkblue);
-    width: 125px;
+    width: 130px;
     border-radius: 50%;
     transition: all 1s;
 }
@@ -211,7 +213,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 50px;
-    background: rgba(150, 10, 10, 0.8);
+    background: #0B2740;
     border-radius: 20px;
     margin: 0 auto;
     padding: 10px;
@@ -236,7 +238,7 @@ header{
 .card{
     width: 270px;
     height: 400px;
-    background-image: linear-gradient(white, lightcoral, darkred);
+    background-image: radial-gradient(#0217ff88,#7489f1);
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -280,7 +282,7 @@ header{
 }
 .list-social img:hover{
     width: 70px;
-    border: 2px solid darkred;
+    border: 2px solid darkblue;
     border-radius: 50%;
     transition: all 1s;
 }
@@ -302,14 +304,14 @@ input{
     margin-top: 10px;
     padding: 5px 0 5px 5px;
     height: 30px;
-    border: 2px solid darkred;
+    border: 2px solid darkblue;
     border-radius: 5px;
 }
 textarea{
     width: 100%;
     margin-top: 10px;
     padding: 5px 0 5px 5px;
-    border: 2px solid darkred;
+    border: 2px solid darkblue;
     border-radius: 5px;
 }
 
@@ -322,7 +324,7 @@ textarea{
     width: 120px;
     height: 50px;
     cursor: pointer;
-    background: radial-gradient(darkred,red);
+    background: linear-gradient(#0B2740, #CEDEF2);
     box-shadow: 0 0 5px 1px black inset;
     border-radius: 5px;
     color: white;
@@ -330,7 +332,7 @@ textarea{
     font-weight: bolder;
 }
 #email-form button:hover{
-    background: radial-gradient(red,darkred);
+    background: linear-gradient(#CEDEF2, #0B2740);
     color: black;
     font-size: 18px;
     transition: all 1s;
@@ -343,37 +345,48 @@ footer{
     height: 160px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     margin: 10px 0;
 }
+footer nav{
+    width: 100%;
+}
 footer ul{
+    width: 100%;
+    height: 40px;
     display: flex;
-    margin-right: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
 }
 .space-list{
-    width: 120px;
-    height: 25px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-list a{
+    padding: 0;
+    margin: 0 auto;
     font-size: 16px;
+    color: black;
 }
 .space-list a:hover{
-    color: skyblue;
     text-decoration: 4px solid darkblue underline;
     font-size: 18px;
     transition: all 1s;
 }
-
-footer p {
-    font-size: 14px;
+footer p{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
 }
+
 /*End of footer style*/
-
-/*Start style page project*/
-#page-project{
-    flex-direction: column;
-}
-/*End style page project*/
 
 /*Beginning of responsiveness treatment*/
 @media(max-width: 800px){
@@ -396,6 +409,16 @@ footer p {
         width: 100px;
         height: 100px;
     }
+
+    .space-list a{
+        font-size: 14px;
+    }
+    .space-list a:hover{
+        font-size: 16px;
+    }
+    footer p {
+        font-size: 14px
+    }
 }
 
 @media(max-width: 600px){
@@ -408,7 +431,7 @@ footer p {
     }
     #menu{
         width: 100%;
-        background: linear-gradient(darkred, black);
+        background: radial-gradient(#6997BF, #0B2740);
         display: block;
         margin-top: 30px;
         border: 3px solid black;
@@ -436,6 +459,9 @@ footer p {
         right: 50px;
         margin: 10px;
         border-bottom: 5px solid black;
+    }
+    #menu a{
+        color: white;
     }
     #menu a:hover{
         text-decoration: none;
@@ -483,11 +509,7 @@ footer p {
     /*End responsive about and skill*/
 
     /*Start responsive footer*/
-    footer ul{
-        margin-right: 50px;
-    }
-    .space-list{
-        width: 100px;
+    .space-list a{
         font-size: 12px;
     }
     .space-list a:hover{
