@@ -221,24 +221,21 @@ header h1{
     padding: 10px 5px;
 }
 #project>a{
-    width: 300px;
+    width: 250px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    background: #0B2740;
-    border-radius: 20px;
+    background: linear-gradient(#0B2740, #CEDEF2);
+    box-shadow: 0 0 5px 1px black inset;
     margin: 0 auto;
-    padding: 10px;
-    color: whitesmoke;
-    text-shadow: 0px 0px 2px black;
-    font-size: 18px;
-
+    padding: 0;
+    border-radius: 10px;
 }
-#project>a:hover {
-    color: skyblue;
-    font-size: 20px;
-    font-weight: bolder;
+#project>a:hover{
+    background: radial-gradient(#CEDEF2, #0B2740);
+    width: 260px;
+    font-size: 19px;
     transition: all 1s;
 }
 
@@ -269,7 +266,8 @@ header h1{
 }
 .card a:hover{
     font-size: 20px;
-    color: skyblue;
+    color: black;
+    text-shadow: none;
     transition: all 1s;
 }
 
