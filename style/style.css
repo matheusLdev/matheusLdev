@@ -257,6 +257,10 @@ header h1{
 .card img{
     width: 100%;
     height: 150px;
+    border-radius: 5px 5px 0 0;
+}
+#card-container p{
+    width: 90%;
 }
 #card-container p, a{
     padding-left: 20px;
@@ -486,6 +490,7 @@ footer p{
     .list-menu a{
         color: white;
         padding: 10px;
+        margin-bottom: 10px;
     }
     .list-menu a:hover{
         text-decoration: none;
@@ -532,6 +537,7 @@ footer p{
     }
     .slide-carousel button{
         width: 60px;
+        opacity: .1;
     }
     /*End responsive about and skill*/
 
