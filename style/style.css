@@ -265,7 +265,7 @@ header h1{
 #card-container p, a{
     padding-left: 20px;
 }
-#card-container a {
+#card-container a{
     height: 30px;
 }
 .card a:hover{
@@ -329,6 +329,7 @@ input{
 }
 textarea{
     width: 100%;
+    resize: vertical;
     margin-top: 10px;
     padding: 5px 0 5px 5px;
     border: 2px solid darkblue;
@@ -356,6 +357,10 @@ textarea{
     color: black;
     font-size: 18px;
     transition: all 1s;
+}
+#thanks{
+    margin-top: 10px;
+    padding: 10px 10px 20px;
 }
 /*End of contacts section style*/
 
