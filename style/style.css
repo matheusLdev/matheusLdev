@@ -267,6 +267,7 @@ header h1{
 }
 #card-container a{
     height: 30px;
+    text-decoration: underline 2px;
 }
 .card a:hover{
     font-size: 20px;
@@ -565,7 +566,7 @@ footer p{
     height: 22px;
     display: block;
     text-align: end;
-    text-decoration: underline;
+    text-decoration: underline 2px;
 }
 
 #thanks .text-edition:hover{
