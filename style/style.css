@@ -559,3 +559,17 @@ footer p{
     /*End responsive footer*/
 }
 /*End of responsiveness treatment*/
+
+/* Style thanks */
+#thanks .text-edition{
+    height: 22px;
+    display: block;
+    text-align: end;
+    text-decoration: underline;
+}
+
+#thanks .text-edition:hover{
+    color: gainsboro;
+    font-size: 20px;
+    transition: 1s;
+}
