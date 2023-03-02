@@ -1,5 +1,4 @@
 const mobileBtn = document.getElementById('mobile-btn');
-const selectSection = document.getElementsByClassName('list-menu');
 const nav = document.getElementById('navegation');
 
 
