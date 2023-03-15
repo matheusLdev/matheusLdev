@@ -27,5 +27,3 @@
 
 ## - Access my portfolio: 👉[![Portfólio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://matheusldev.github.io/matheusLdev/)👈
 <br/>
-
-![Matheus GitHub stats](https://github-readme-stats.vercel.app/api?username=matheusLdev&show_icons=true&theme=merko)
