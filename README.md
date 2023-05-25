@@ -1,9 +1,9 @@
-# MathGo Dev - Full Stack Developer 
+# MathGo Dev - Front End Developer 
 ## Hello! I'm Matheus Gonçalves 👋
 ### - About me:
 - 👨‍💻 I'm passionate technology, games, football and solve problems.
 
-- 🔭 I'm currently working as a freelance full stack developer.
+- 🔭 I'm currently working as a freelance front end developer.
 
 - 🌱 I'm currently building my portfolio and specializing in the javascript world.
 
