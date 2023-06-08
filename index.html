@@ -5,193 +5,44 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link type="text/css" rel="stylesheet" href="style/style.css">
-        
-        <title>Desenvolvedor - Matheus Gonçalves</title>
+        <link type="text/css" rel="stylesheet" href="style/style.css"> 
+        <title>Desenvolvedor Matheus Gonçalves</title>
     </head>
     <body>        
         <header>
-            <h1>Matheus Gonçalves - Web Developer</h1>
-            <nav id="navegation">
-                <button aria-label="Abrir Menu" id="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-                    <span id="hamburger"></span>
+            <nav>
+                <div>
+                    <h1>Matheus Gonçalves</h1>
+                </div>
+                
+                <button aria-label="Abrir Menu" id="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 </button>
+                
                 <ul id="menu" role="menu">
-                    <li class="list-menu">
-                        <a onclick="closeMenu()" href="#">HOME</a>
+                    <li>
+                        <a href="#">Home</a>
                     </li>
-                    <li class="list-menu">
-                        <a onclick="closeMenu()" href="#about">SOBRE MIM</a>
+                    <li>
+                        <a href="#project">Projetos</a>
                     </li>
-                    <li id="list-logo" class="list-menu">
-                        <a href="#">
-                            <img src="imagens/logo-mathgo.png" alt="logo-mathgo"/>
-                        </a>
+                    <li>
+                        <a href="#experience">Experiência</a>
                     </li>
-                    <li class="list-menu">
-                        <a onclick="closeMenu()" href="#project">PROJETOS</a>
-                    </li>
-                    <li class="list-menu">
-                        <a onclick="closeMenu()" href="#contact">CONTATO</a>
+                    <li>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </nav> 
         </header>
-        <main id="about" class="shadow-container">
-            <div id="about-container">
-                <img id="my-photo" src="imagens/my-photo.png" alt="photo-matheus"/>
-                <div>
-                    <h2 class="title-edition">Oi, tudo bem?</h2>
-                    <p class="text-edition">
-                        Sou Matheus Gonçalves, determinado em realizar metas e objetivos, apaixonado pelo mundo da tecnologia e estou em contínuo aprendizado. Sou organizado, resiliente e proativo.  
-                    </p>
-                    <p class="text-edition">
-                        Atualmente, estou cursando engenharia de software pela Estácio. Atuo como desenvolvedor full stack, usando Bootstrap, javascript, React e NodeJS. Sou focado na criação de código limpo e de fácil entendimento, interfaces responsivas, reutilização de código e resolução de problemas. Vamos tomar um café ? 
-                    </p>
-                </div>
-            </div>
-            <h2 class="title-edition">Minhas skills:</h2>
-            <div data-slide="slide" class="slide">
-                <div class="slide-items">
-                    <div>
-                        <img src="imagens/logo-html.png" alt="logo-html"/>
-                        <img src="imagens/logo-css.png" alt="logo-css"/>
-                        <img src="imagens/logo-bootstrap.png" alt="logo-bootstrap"/>
-                        <img src="imagens/logo-sass.png" alt="logo-sass"/>
-                        <img src="imagens/logo-wordpress.png" alt="logo-wordpress">
-                    </div>
-                    <div>
-                        <img src="imagens/logo-js.png" alt="logo-javascript"/>
-                        <img src="imagens/logo-typescript.png" alt="logo-typescript"/>
-                        <img src="imagens/logo-react.png" alt="logo-react"/>
-                        <img src="imagens/logo-nodejs.png" alt="logo-nodejs"/>
-                        <img src="imagens/logo-mysql.png" alt="logo-mysql"/>
-                    </div>
-                </div>
-                <nav class="slide-carousel">
-                    <button class="slide-prev">
-                        <img src="imagens/angulo-duplo-esquerdo.png" alt="seta-esquerda">
-                    </button>
-                    <button class="slide-next">
-                        <img src="imagens/angulo-duplo-direito.png" alt="seta-direita">
-                    </button>
-                    <div class="slide-thumb"></div>
-                </nav>
-            </div>
+        <main>
+            
         </main>
-        <section id="project" class="shadow-container"> 
-            <h2 class="title-edition">Aqui estão alguns dos meus projetos e desafios:</h2>
-            <div id="card-container">
-                <article class="card shadow-container">
-                    <img src="imagens/lista-tarefa.png" alt="imagem lista de Tarefas">
-                    <h3 class="title-edition">Lista de Tarefas</h3>
-                    <p class="text-edition">
-                        Essa lista de tarefas foi realizada com Bootstrap, React e Typescript.
-                    </p>
-                    <a class="text-edition" href="https://github.com/matheusLdev/lista-tarefas" target="_blank">Ver Repositório</a>
-                    <a class="text-edition" href="https://matheusldev.github.io/lista-tarefas/" target="_blank">Ver projeto</a>
-                </article>
-                <article class="card shadow-container">
-                    <img src="imagens/mata-mosquito.png" alt="imagem jogo mata mosquito">
-                    <h3 class="title-edition">Jogo mata mosquito</h3>
-                    <p class="text-edition">Esse jogo foi realizado com HTML, CSS, Bootstrap e JavaScript.</p>
-                    <a class="text-edition" href="https://github.com/matheusLdev/projeto-jogo-mata-mosquito" target="_blank">Ver Repositório</a>
-                    <a class="text-edition" href="https://matheusldev.github.io/projeto-jogo-mata-mosquito/index.html" target="_blank">Ver projeto</a>
-                </article>
-                <article class="card shadow-container">
-                    <img src="imagens/calculadora.png" alt="imagem calculadora">
-                    <h3 class="title-edition">Calculadora</h3>
-                    <p class="text-edition">Essa ferramenta foi feita utilizando HTML, CSS, Bootstrap e JavaScript.</p>
-                    <a class="text-edition" href="https://github.com/matheusLdev/calculadora" target ="_blank">Ver Repositório</a>
-                    <a class="text-edition" href="https://matheusldev.github.io/calculadora/" target ="_blank">Ver projeto</a>
-                </article>
-                <article class="card shadow-container">
-                    <img src="imagens/project-contruction.png" alt="Projeto em construção">
-                    <h3 class="title-edition">Projeto em construção</h3>
-                    <p class="text-edition">Estou trabalhando nisso.</p>
-                    <a class="text-edition" href="#project">Ver Repositório</a>
-                    <a class="text-edition" href="#project">Ver projeto</a>
-                </article>
-            </div>
-            <a class="text-edition" href="project.html">Ver mais projetos e desafios!</a>
+        <section id="project">
         </section>
-        <section id="contact" class="shadow-container">
-            <h2 class="title-edition">Vamos conversar ?</h2>
-            <ul>
-                <li class="list-social">
-                    <a href="https://github.com/matheusLdev">
-                        <img src="imagens/logo-github.png" alt="logo-github">
-                    </a>
-                </li>
-                <li class="list-social">
-                    <a href="https://wa.me/+5521980729950">
-                        <img src="imagens/logo-wpp.png" alt="logo-wpp">
-                    </a>
-                </li>
-                <li class="list-social">
-                    <a href="https://www.linkedin.com/in/developer-matheus/">
-                        <img src="imagens/logo-linkedin.png" alt="logo-linkedin">
-                    </a>
-                </li>
-            </ul>           
-            <article id="email-form">
-                <form class="text-edition" action="https://formsubmit.co/goncalves.mld@hotmail.com" method="POST">
-                    <fieldset>
-                        <legend>Deixe sua mensagem</legend>
-                          
-                        <label for="name">Nome:(*)</label>
-                        <br>
-                        <input id="name" type="text" name="name" placeholder="Digite seu nome:" required>
-                        <br>
-                        <br>            
-                                
-                        <label for="phone">Telefone:</label>
-                        <br>
-                        <input id="phone" type="tel" name="phone" placeholder="(XX)9XXXX-XXXX" maxlength="14">
-                        <br>
-                        <br>            
-                                
-                        <label for="email">Email:(*)</label>
-                        <br>
-                        <input id="email" type="email" name="email" placeholder="email@example.com.br" required>
-                        <br>
-                        <br>
-                                
-                        <label for="subject">Assunto:(*)</label>
-                        <br>
-                        <input id="subject" type="text" name="subject" placeholder="Digite tema do assunto:" required>
-                        <br>
-                        <br>
-                                
-                        <label for="message">Mensagem:(*)</label>
-                        <br>
-                        <textarea id="message" name="message" cols="20" rows="10" placeholder="Escreva aqui sua mensagem:"></textarea>
-                        <br>
-                        <br>      
-                        <div>
-                            <input type="hidden" name="_template" value="box">
-                            <input type="hidden" name="_next" value="https://matheusldev.github.io/matheusLdev/thanks.html">
-                            <button type="reset">Limpar</button>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </article> 
+        <section id="contact">
         </section>
         <footer>
-            <nav>
-                <ul>
-                    <li class="space-list"><a href="#">HOME</a></li>
-                    <li class="space-list"><a href="#about">SOBRE MIM</a></li>
-                    <li class="space-list"><a href="#project">PROJETOS</a></li>
-                    <li class="space-list"><a href="#contact">CONTATO</a></li>
-                </ul>
-            </nav>
-            <p>Todos os direitos reservados - Desenvolvido por Matheus Gonçalves</p>
+            <p>Todos os direitos reservados - Desenvolvedor Matheus Gonçalves</p>
         </footer>
-        <script src="js/carousel_slide.js"></script>
-        <script src="js/menu-hamburger.js"></script>
-        <script src="js/phone-formatter.js"></script>
     </body>
-    
 </html>
