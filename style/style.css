@@ -193,13 +193,86 @@ section#experience div.office {
     border-right: 2px solid #00023a;
 }
 
+section#education {
+    background: linear-gradient(#e7e7f1 35%, #00023a 1px);
+}
+
+section#education div#container-education {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#education div#container-education article.container-content {
+    width: 360px;
+    display: flex;
+    margin: 20px 4px 8px 0;
+}
+
+section#education article#other-courses {
+    width: 700px;
+    background: linear-gradient(#E7E7F1, #ccccde);
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #00023a;
+}
+
+section#education article#other-courses div#courses{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+
+section#education article#other-courses div.courses-right {
+    text-align: right;
+}
+
+section#contact {
+    background: linear-gradient(#00023a, #00001f);
+}
+
+section#contact h2 {
+    color: #fcfcff;
+}
+
 article#container-contact ul {
     width: 100%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+article#container-contact ul li a{
+    display: flex;
+}
+
+article#container-contact ul li a img {
+    padding-right: 4px;
+}
+
+article#container-contact ul li p:hover {
+    color: #00023a;
 }
 
 section, footer {
     position: relative;
     top: 100px;
+}
+
+footer {
+    background: #00001f;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 70px;
+}
+
+footer p {
+    color: #fcfcff;
 }
