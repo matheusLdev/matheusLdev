@@ -9,71 +9,54 @@
         <title>Desenvolvedor Matheus Gonçalves</title>
     </head>
     <body>        
-        <header>
-            <nav>
-                <div>
-                    <h1>Matheus Gonçalves</h1>
-                </div>
-                
-                <button aria-label="Abrir Menu" id="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                </button>
-                
-                <ul id="menu" role="menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#project">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Experiência</a>
-                    </li>
-                    <li>
-                        <a href="#education">Formação</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav> 
-        </header>
+        <header></header>
+        
         <main>
-            <article>
-                <h2>Desenvolvedor Front-End, graduando em Engenharia de Software.</h2>
-                <p>Me chamo Matheus Gonçalves, tenho 25 anos, moro em Nova Iguaçu, Rio de Janeiro. Amo tecnologia, games, futebol, estar com a minha família e tomar um café!</p>
-                <p>Sou um profissional de TI focado em aprender diariamente, colaborar, prezo pela organização e comunicação. Atualmente, estou graduando em engenharia de software, e me especializando como desenvolvedor front end.</p>
-                <p>Posso atuar como desenvolvedor front-end, full-stack ou back-end.</p>
-            </article>
-            <article>
-                <img src="img/img-matheus.png" alt="Matheus">
-                <ul>
-                    <li>
-                        <a href="mailto:goncalves.mld@hotmail.com">
-                            <img src="img/icons/email.svg" alt="email">
-                            <p>goncalves.mld@hotmail.com</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https:/wa.me/+5521980729950" target="_blank">
-                            <img src="img/icons/whatsapp.svg" alt="whatsapp">
-                            <p>(21) 98072-9950</p>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="img/icons/map.svg" alt="icon-map">
-                        <p>Nova Iguaçu - RJ</p>
-                    </li>
-                    <li>
-                        <a href="https://github.com/matheusLdev">
-                            <img src="img/icons/github.svg" alt="Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/developer-matheus/">
-                            <img src="img/icons/linkedin.svg" alt="LinkedIn">
-                        </a>
-                    </li>
-                </ul>
-            </article>
-            <div>
+            <div class="content-main">
+                <article id="apresentation">
+                    <p>
+                        <strong>Olá, sou Matheus Gonçalves, atuo como desenvolvedor frontend</strong> com habilidades avançadas em HTML, CSS e JavaScript. Minha paixão está na criação de interfaces de usuário intuitivas e responsivas, utilizando tecnologias modernas e frameworks como Bootstrap e SASS para desenvolver layouts esteticamente agradáveis.
+                    </p>
+                    <p>
+                        Além disso, tenho conhecimentos intermediários em React, jQuery, PHP, MySQL e Figma, que me permitem criar aplicações interativas e dinâmicas. Atualmente, estou cursando Engenharia de Software, o que me possibilita expandir meus conhecimentos e aprimorar minhas habilidades.
+                    </p>
+                    <p>
+                        Busco constantemente atualizações e aprimoramentos por meio de cursos online e minha formação acadêmica. Combinando meu olhar analítico e organizado para resolver problemas complexos e minhas habilidades eficazes de comunicação, meu objetivo é oferecer experiências digitais excepcionais que encantem os usuários e impulsionem o sucesso dos projetos.
+                    </p>
+                </article>
+                <article id="contact-main">
+                    <img src="img/img-matheus.png" alt="Matheus">
+                    <ul>
+                        <li>
+                            <a href="mailto:goncalves.mld@hotmail.com">
+                                <img src="img/icons/email.svg" alt="email">
+                                <p>goncalves.mld@hotmail.com</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https:/wa.me/+5521980729950" target="_blank">
+                                <img src="img/icons/whatsapp.svg" alt="whatsapp">
+                                <p>(21) 98072-9950</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/wAVZDHJyEE3yo2Bf8" target="_blank">
+                                <img src="img/icons/map.svg" alt="icon-map">
+                                <p>Nova Iguaçu - RJ</p>
+                            </a>
+                        </li>
+                        <li id="main-networking">
+                            <a href="https://github.com/matheusLdev">
+                                <img src="img/icons/github.svg" alt="Github">
+                            </a>
+                            <a href="https://www.linkedin.com/in/developer-matheus/">
+                                <img src="img/icons/linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <div class="content-main">
                 <img src="img/icons/html.svg" alt="HTML5">
                 <img src="img/icons/git.svg" alt="Git">
                 <img src="img/icons/figma.svg" alt="Figma">
@@ -88,9 +71,13 @@
                 <img src="img/icons/mysql.svg" alt="MySQL">
             </div>
         </main>
+
         <section id="project">
             <h2>Projetos</h2>
+            <article id="container-project"></article>
+            <a href="project.html" class="box">Ver todos os Projetos</a>
         </section>
+
         <section id="experience">
             <h2>Experiência</h2>
             <article>
@@ -127,13 +114,14 @@
                 </article>
                 <article>
                     <div>
-                        <h2>Supervisor Comercial</h2>
+                        <h2>Agente de atendimento ao cliente</h2>
                         <p>AquaRio - Aquário Marinho do Rio</p>
                         <p>Outubro de 2017 até Maio de 2021</p>
                     </div>
                 </article>
             </div>
         </section>
+
         <section id="education">
             <h2>Formação</h2>
             <article>
@@ -201,9 +189,10 @@
             </article>
         </section>
 
-        <footer>
-            <p>Desenvolvedor Matheus Gonçalves - Todos os direitos reservados</p>
-            <a href="#"><img src="img/icons/btn-home.svg" alt="Voltar ao Início"></a>
-        </footer>
+        <footer></footer>
+
+
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
     </body>
 </html>

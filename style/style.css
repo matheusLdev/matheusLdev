@@ -1,7 +1,140 @@
 /*Beginning of style in general*/
-*{
+*{  
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: 'Chakra Petch', 'Roboto', sans-serif;
+}
+
+body {
+    background: #e7e7f1;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(#00023a, #00001f);
+    padding: 8px 0;
+    z-index: 1;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 38px;
+    color: #fcfcff;
+}
+
+nav button {
+    display: none;
+}
+nav ul#menu {
+    display: flex;
+}
+
+ul#menu a {
+    color: #fcfcff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+ul#menu a:hover {
+    background: #060d8e;
+    transition: 0.3s;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    top: 70px;
+}
+
+div.content-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+article#apresentation {
+    width: 70%;
+}
+
+p {
+    font-size: 20px;
+    color: #595968;
+}
+
+article#apresentation p {
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+article#contact-main>img {
+    width: 250px;
+}
+
+article#contact-main ul {
+    border-left: 2px solid #00023a;
+    border-radius: 2px;
+}
+
+article#contact-main li {
+    margin: 8px;
+}
+
+article#contact-main  li p:hover {
+    color: #00023a;
+}
+
+article#contact-main li#main-networking a {
+    margin-right: 20px;
+}
+
+article#contact-main li img {
+    width: 30px;
+}
+
+article#contact-main a, article#contact-main li {
+    display: flex;
+    align-items: center;
+}
+
+article#contact-main p {
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+section#project {
+    height: 100vh;
+    background: linear-gradient(#00023a, #00001f);
+}
+
+section#project h2 {
+    color: #fcfcff;
+}
+
+h2 { 
+    font-size: 32px;
+    color: #00023a;
+}
+
+section, footer {
+    position: relative;
+    top: 100px;
 }
