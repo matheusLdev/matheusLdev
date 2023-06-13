@@ -43,6 +43,7 @@ nav ul#menu {
 ul#menu a {
     color: #fcfcff;
     font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     padding: 8px;
     margin-left: 10px;
@@ -51,6 +52,7 @@ ul#menu a {
 
 ul#menu a:hover {
     background: #060d8e;
+    color: #00001f;
     transition: 0.3s;
 }
 
@@ -120,6 +122,12 @@ article#contact-main p {
     padding-left: 4px;
 }
 
+.container-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
 section#project {
     height: 100vh;
     background: linear-gradient(#00023a, #00001f);
@@ -129,9 +137,66 @@ section#project h2 {
     color: #fcfcff;
 }
 
+div#button-project {
+    display: flex;
+    justify-content: center;
+}
+
+div#button-project a {
+    background: linear-gradient(#060d8e, #0b0f5d);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfcff;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+div#button-project a:hover {
+    color: #00001f;
+    transition: 0.3s;
+}
+
 h2 { 
     font-size: 32px;
     color: #00023a;
+}
+
+.container-content, article#container-contact { 
+    width: 90%;
+    background: linear-gradient(#E7E7F1, #ccccde);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #00023a;
+}
+
+.container-content h2 {
+    font-size: 24px;
+}
+
+.container-content p {
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+}
+
+section#experience div.description {
+    width: 600px;
+    margin-left: 4px;
+}
+
+section#experience div.office {
+    width: 300px;
+    border-right: 2px solid #00023a;
+}
+
+article#container-contact ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
 }
 
 section, footer {
