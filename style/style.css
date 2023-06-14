@@ -1,4 +1,3 @@
-/*Beginning of style in general*/
 *{  
     margin: 0;
     padding: 0;
@@ -68,8 +67,11 @@ div.content-main {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px 0;
+}
+
+div.content-main:nth-child(2) {
+    flex-wrap: wrap;
 }
 
 article#apresentation {
@@ -166,18 +168,17 @@ h2 {
     width: 90%;
     background: linear-gradient(#E7E7F1, #ccccde);
     display: flex;
-    flex-wrap: wrap;
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #00023a;
 }
 
-.container-content h2 {
+.container-content h2, article#other-courses h2 {
     font-size: 24px;
 }
 
-.container-content p {
+.container-content p, article#other-courses p {
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.3px;
@@ -201,7 +202,6 @@ section#education div#container-education {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 section#education div#container-education article.container-content {
@@ -211,7 +211,7 @@ section#education div#container-education article.container-content {
 }
 
 section#education article#other-courses {
-    width: 700px;
+    width: 100%;
     background: linear-gradient(#E7E7F1, #ccccde);
     text-align: center;
     margin: 20px auto;
@@ -224,6 +224,7 @@ section#education article#other-courses div#courses{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: start;
 }
 
@@ -251,6 +252,10 @@ article#container-contact ul li a{
     display: flex;
 }
 
+article#container-contact ul li:nth-child(4){
+    display: flex;
+}
+
 article#container-contact ul li a img {
     padding-right: 4px;
 }
@@ -275,4 +280,75 @@ footer {
 
 footer p {
     color: #fcfcff;
+}
+
+@media (max-width:700px) {
+    article#contact-main>img {
+        border-right: 2px solid #00023a;
+        padding-right: 4px;
+    }
+    
+    article#contact-main ul {
+        border-left: none;
+    }
+
+    article#contact-main ul li {
+        margin-bottom: 28px;
+    }
+
+    article#contact-main {
+        display: flex;
+        align-items: center;
+    }
+
+    div.content-main:nth-child(2) img{
+        margin: 20px 32px 0 0;
+    }
+    
+    article#apresentation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    div.content-main {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    section#experience div.office {
+        width: 100%;
+        border-bottom: 2px solid #00023a;
+        border-right:none;
+        margin: 8px 0;
+    }
+
+    .container-content, article#container-contact { 
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    section#education {
+        background: linear-gradient(#e7e7f1 22%, #00023a 1px);
+    }
+
+    section#education div#container-education {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section#education div#container-education article.container-content {
+        width: 100%;
+    }
+
+    section#education article#other-courses div.courses-right {
+        text-align: start;
+    }
+
+    footer {
+        padding: 12px 24px;
+    }   
+    
+    footer p {
+        font-size: 14px;
+    }
 }
