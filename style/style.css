@@ -40,6 +40,11 @@ nav ul#menu {
     display: flex;
 }
 
+nav a h1 {
+    padding: 0;
+    border-radius: 5px;
+}
+
 ul#menu a {
     color: #fcfcff;
     font-size: 14px;
@@ -50,9 +55,8 @@ ul#menu a {
     border-radius: 5px;
 }
 
-ul#menu a:hover {
-    background: #060d8e;
-    color: #00001f;
+ul#menu a:hover, nav a h1:hover {
+    color: #595968;
     transition: 0.3s;
 }
 
@@ -103,10 +107,6 @@ article#contact-main li {
     margin: 8px;
 }
 
-article#contact-main li p:hover {
-    color: #00023a;
-}
-
 article#contact-main li#main-networking a {
     margin-right: 20px;
 }
@@ -115,15 +115,19 @@ article#contact-main li img {
     width: 30px;
 }
 
+article#contact-main li a p {
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+article#contact-main li a p:hover {
+    color: #00023a;
+}
+
 article#contact-main a,
 article#contact-main li {
     display: flex;
     align-items: center;
-}
-
-article#contact-main p {
-    font-size: 16px;
-    padding-left: 4px;
 }
 
 .container-box {
@@ -157,7 +161,7 @@ div#button-project a {
 }
 
 div#button-project a:hover {
-    color: #00001f;
+    color: #595968;
     transition: 0.3s;
 }
 
@@ -255,6 +259,8 @@ article#container-contact ul {
 
 article#container-contact ul li a {
     display: flex;
+    align-items: center;
+    padding: 4px 8px;
 }
 
 article#container-contact ul li:nth-child(4) {
@@ -292,7 +298,7 @@ footer p {
     button#btn-mobile {
         width: 30px;
         height: 50px;
-        background: url(../img/icons/menu-open.svg) no-repeat;
+        background: url("../img/icons/menu-open.svg") no-repeat;
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -328,11 +334,6 @@ footer p {
         padding: 20px;
         margin-left: 0px;
         border-radius: 0px;
-    }
-
-    ul#menu a:hover {
-        background: none;
-        color: #595968;
     }
 
     article#contact-main>img {
@@ -409,5 +410,51 @@ footer p {
 @media (max-width:500px) {
     h1 {
         font-size: 28px;
+    }
+
+    article#contact-main>img {
+        width: 120px;
+    }
+
+    article#contact-main ul li {
+        margin-bottom: 12px;
+    }
+
+    article#contact-main li img {
+        width: 20px;
+    }
+
+    article#contact-main li a p {
+        font-size: 14px;
+    }
+
+    div.content-main:nth-child(2) img {
+        width: 50px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    .container-content h2,
+    article#other-courses h2 {
+        font-size: 20px;
+    }
+
+    .container-content p,
+    article#other-courses p {
+        font-size: 14px;
+    }
+
+    article#container-contact ul li a img {
+        width: 30px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }

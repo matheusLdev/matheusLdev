@@ -5,10 +5,13 @@ const menu = document.createElement("ul");
 function createMenuHeader() {
   const navegation = document.createElement("nav");
   header.append(navegation)
-
+  
+  let a = document.createElement("a");
+  a.href = "#";
+  navegation.append(a);
   const myName = document.createElement("h1");
   myName.innerText = "Matheus Gonçalves";
-  navegation.append(myName);
+  a.append(myName);
 
   buttonMenuMobile.ariaLabel = "Abrir menu";
   buttonMenuMobile.id = "btn-mobile";
