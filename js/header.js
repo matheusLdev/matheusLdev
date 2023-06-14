@@ -1,5 +1,7 @@
 const header = document.querySelector("header");
-
+const buttonMenuMobile = document.createElement("button");
+const menu = document.createElement("ul");
+    
 function createMenuHeader() {
   const navegation = document.createElement("nav");
   header.append(navegation)
@@ -8,15 +10,12 @@ function createMenuHeader() {
   myName.innerText = "Matheus Gonçalves";
   navegation.append(myName);
 
-  const buttonMenuMobile = document.createElement("button");
   buttonMenuMobile.ariaLabel = "Abrir menu";
   buttonMenuMobile.id = "btn-mobile";
   buttonMenuMobile.ariaHasPopup = "true";
   buttonMenuMobile.ariaExpanded = "false";
-  buttonMenuMobile.innerText = "Menu";
   navegation.append(buttonMenuMobile);
 
-  const menu = document.createElement("ul");
   menu.id = "menu";
   menu.role = "menu";
   navegation.append(menu);
@@ -49,5 +48,22 @@ function createMenuHeader() {
     li.append(a);
   }
 }
+createMenuHeader()
 
-createMenuHeader();
+function handleMenu() {
+  menu.classList.toggle("active");
+  const active = menu.classList.contains("active");
+  buttonMenuMobile.ariaExpanded = active;
+  if(active) {
+    buttonMenuMobile.ariaLabel = "Fechar Menu";
+    buttonMenuMobile.style.background = "url(./img/icons/menu-close.svg) no-repeat";
+    buttonMenuMobile.style.transition = "0.3s";
+  } else {
+    buttonMenuMobile.ariaLabel = "Abrir Menu";
+    buttonMenuMobile.style.background = "url(./img/icons/menu-open.svg) no-repeat";
+    buttonMenuMobile.style.transition = "0.3s";
+  }
+}
+
+buttonMenuMobile.addEventListener("click", handleMenu);
+menu.addEventListener("click", handleMenu);
