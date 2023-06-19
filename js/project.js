@@ -79,7 +79,7 @@ fetch(repositoryMatheus)
       }
 
       const checkPage = window.location.pathname;
-      const onProject = "/project.html";
+      const onProject = "/matheusLdev/project.html";
       if (checkPage === onProject) {
         project.style.background = "#e7e7f1";
         nameSection.style.color = "#00023a";
