@@ -80,8 +80,8 @@ fetch(repositoryMatheus)
 
       const checkPage = window.location.pathname;
       const onIndex = "matheusLdev/index.html";
-      const onIndexLocation = "/index.html";
-      if (checkPage == onIndexLocation || checkPage == onIndex) {
+      // const onIndexLocation = "/index.html";
+      if (checkPage === onIndex) {
         sortRepository.slice(0, 3).forEach((item) => {
           createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
         });

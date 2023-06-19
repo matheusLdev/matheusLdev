@@ -31,8 +31,8 @@ function createMenuHeader() {
     
     const checkPage = window.location.pathname;
     const onIndex = "matheusLdev/index.html";
-    const onIndexLocation = "/index.html";
-    if (checkPage === onIndexLocation || checkPage === onIndex) {
+    // const onIndexLocation = "/index.html";
+    if (checkPage === onIndex) {
       if (nameSectionPage[contador] === "index") {
         a.href = "#";
       } else if (nameSectionPage[contador] === "project") {
