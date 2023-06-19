@@ -81,7 +81,7 @@ fetch(repositoryMatheus)
       const checkPage = window.location.pathname;
       const onIndex = "matheusLdev/index.html";
       const onIndexLocation = "/index.html";
-      if (checkPage === onIndex || checkPage === onIndexLocation) {
+      if (checkPage == onIndexLocation || checkPage == onIndex) {
         sortRepository.slice(0, 3).forEach((item) => {
           createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
         });
