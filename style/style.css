@@ -137,12 +137,64 @@ article#contact-main li {
 }
 
 section#project {
-    height: 100vh;
     background: linear-gradient(#00023a, #00001f);
 }
 
 section#project h2 {
     color: #fcfcff;
+}
+
+section#project div#container-project {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto;
+}
+
+section#project article.card {
+    width: 360px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#E7E7F1, #ccccde);
+    padding-top: 20px;
+    border-radius: 2px;
+    border: 1px solid #595968;
+}
+
+section#project article.card h2 {
+    font-size: 24px;
+    color: #00023a;
+}
+
+section#project article.card p {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    color: #595968;
+}
+
+section#project article.card div {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(#060d8e, #0b0f5d);
+}
+section#project article.card a {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfcff;
+    padding: 12px;
+    border: 0.5px solid #595968;
 }
 
 div#button-project {
@@ -160,7 +212,7 @@ div#button-project a {
     padding: 12px;
 }
 
-div#button-project a:hover {
+section#project article.card a:hover, div#button-project a:hover {
     color: #595968;
     transition: 0.3s;
 }
@@ -438,6 +490,14 @@ footer p {
     
     p {
         font-size: 16px;
+    }
+
+    section#project article.card {
+        margin-top: 8px;
+    }
+
+    section#project article.card p {
+        margin-bottom: 30px;
     }
 
     .container-content h2,

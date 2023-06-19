@@ -53,7 +53,7 @@ function createMenuHeader() {
 }
 createMenuHeader()
 
-function handleMenu() {
+function handleMenuMobile() {
   menu.classList.toggle("active");
   const active = menu.classList.contains("active");
   buttonMenuMobile.ariaExpanded = active;
@@ -68,5 +68,5 @@ function handleMenu() {
   }
 }
 
-buttonMenuMobile.addEventListener("click", handleMenu);
-menu.addEventListener("click", handleMenu);
+buttonMenuMobile.addEventListener("click", handleMenuMobile);
+menu.addEventListener("click", handleMenuMobile);
