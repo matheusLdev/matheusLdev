@@ -95,7 +95,7 @@ fetch(repositoryMatheus)
         containerBox.append(containerBtnProject);
 
         const btnProject = document.createElement("a");
-        btnProject.href = "/project.html";
+        btnProject.href = "project.html";
         btnProject.innerText = "Ver todos os Projetos";
         containerBtnProject.append(btnProject);
       }
