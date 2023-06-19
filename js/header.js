@@ -31,7 +31,7 @@ function createMenuHeader() {
     
     const checkPage = window.location.pathname;
     const onProject = "/project.html";
-    if (checkPage === onProjectLocation) {
+    if (checkPage === onProject) {
       if (nameSectionPage[contador] === "index") {
         a.href = "index.html";
       } else if (nameSectionPage[contador] === "project") {
