@@ -3,15 +3,14 @@ const repositoryMatheus = "https://api.github.com/users/matheusLdev/repos";
 fetch(repositoryMatheus)
   .then(response => response.json())
   .then(data => {
-    let allData = data; // Aqui vou salvar todos os dados
-    let sortRepository = []; // Ordenar repositórios por data
+    let allData = data;
+    let sortRepository = []; 
     
     for (let i = 0; i < allData.length; i++) {
       let checkPage = allData[i].has_pages;
       let checkPortfolio = allData[i].name === "matheusLdev";
       if (checkPage) {
         if (!checkPortfolio) {
-          // Vou ordenar os repositórios em ordem cronológica, pois por padrão eles vêm em ordem alfabética e tratar os dados de cada um.
           function treatRepository() {
             let repository = {};
             let repositoryDate = allData[i].created_at;
