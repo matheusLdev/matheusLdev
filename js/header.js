@@ -1,7 +1,6 @@
 const header = document.querySelector("header");
 const buttonMenuMobile = document.createElement("button");
 const menu = document.createElement("ul");
-console.log(menu);
     
 function createMenuHeader() {
   const navegation = document.createElement("nav");
@@ -31,9 +30,8 @@ function createMenuHeader() {
     let a = document.createElement("a");
     
     const checkPage = window.location.pathname;
-    const onProject = "/matheusLdev/project.html";
-    const onProjectLocation = "/project.html";
-    if (checkPage === onProject || checkPage === onProjectLocation) {
+    const onProject = "/project.html";
+    if (checkPage === onProjectLocation) {
       if (nameSectionPage[contador] === "index") {
         a.href = "index.html";
       } else if (nameSectionPage[contador] === "project") {

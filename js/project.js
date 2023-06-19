@@ -79,9 +79,8 @@ fetch(repositoryMatheus)
       }
 
       const checkPage = window.location.pathname;
-      const onProject = "/matheusLdev/project.html";
-      const onProjectLocation = "/project.html";
-      if (checkPage === onProject || checkPage === onProjectLocation) {
+      const onProject = "/project.html";
+      if (checkPage === onProject) {
         project.style.background = "#e7e7f1";
         nameSection.style.color = "#00023a";
         sortRepository.forEach((item) => {
