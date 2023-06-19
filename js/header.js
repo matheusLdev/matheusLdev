@@ -1,6 +1,7 @@
 const header = document.querySelector("header");
 const buttonMenuMobile = document.createElement("button");
 const menu = document.createElement("ul");
+console.log(menu);
     
 function createMenuHeader() {
   const navegation = document.createElement("nav");
@@ -30,23 +31,23 @@ function createMenuHeader() {
     let a = document.createElement("a");
     
     const checkPage = window.location.pathname;
-    const onIndex = "matheusLdev/index.html";
-    // const onIndexLocation = "/index.html";
-    if (checkPage === onIndex) {
-      if (nameSectionPage[contador] === "index") {
-        a.href = "#";
-      } else if (nameSectionPage[contador] === "project") {
-        a.href = `#${nameSectionPage[contador]}`;
-      } else {
-        a.href = `#${nameSectionPage[contador]}`;
-      }
-    } else {
+    const onProject = "/matheusLdev/project.html";
+    const onProjectLocation = "/project.html";
+    if (checkPage === onProject || checkPage === onProjectLocation) {
       if (nameSectionPage[contador] === "index") {
         a.href = "index.html";
       } else if (nameSectionPage[contador] === "project") {
         a.href = `#${nameSectionPage[contador]}`;
       } else {
         a.href = `index.html#${nameSectionPage[contador]}`;
+      }
+    } else {
+      if (nameSectionPage[contador] === "index") {
+        a.href = "#";
+      } else if (nameSectionPage[contador] === "project") {
+        a.href = `#${nameSectionPage[contador]}`;
+      } else {
+        a.href = `#${nameSectionPage[contador]}`;
       }
     }
     a.innerText = `${nameSectionMenu[contador]}`;

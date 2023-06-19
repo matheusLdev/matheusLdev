@@ -79,9 +79,15 @@ fetch(repositoryMatheus)
       }
 
       const checkPage = window.location.pathname;
-      const onIndex = "matheusLdev/index.html";
-      // const onIndexLocation = "/index.html";
-      if (checkPage === onIndex) {
+      const onProject = "/matheusLdev/project.html";
+      const onProjectLocation = "/project.html";
+      if (checkPage === onProject || checkPage === onProjectLocation) {
+        project.style.background = "#e7e7f1";
+        nameSection.style.color = "#00023a";
+        sortRepository.forEach((item) => {
+          createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
+        });
+      } else {
         sortRepository.slice(0, 3).forEach((item) => {
           createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
         });
@@ -90,16 +96,10 @@ fetch(repositoryMatheus)
         containerBox.append(containerBtnProject);
 
         const btnProject = document.createElement("a");
-        btnProject.href = "project.html";
+        btnProject.href = "/project.html";
         btnProject.innerText = "Ver todos os Projetos";
         containerBtnProject.append(btnProject);
-      } else {
-        project.style.background = "#e7e7f1";
-        nameSection.style.color = "#00023a";
-        sortRepository.forEach((item) => {
-          createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
-        });
       }
-    }
+    }  
     createSizeProject();
   });
