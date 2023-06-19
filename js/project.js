@@ -78,13 +78,10 @@ fetch(repositoryMatheus)
         containerLink.append(linkRepository, linkProject);
       }
 
-      if (window.location.pathname === "/project.html") {
-        project.style.background = "#e7e7f1";
-        nameSection.style.color = "#00023a";
-        sortRepository.forEach((item) => {
-          createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
-        });
-      } else {
+      const checkPage = window.location.pathname;
+      const onIndex = "matheusLdev/index.html";
+      const onIndexLocation = "/index.html";
+      if (checkPage === onIndex || checkPage === onIndexLocation) {
         sortRepository.slice(0, 3).forEach((item) => {
           createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
         });
@@ -96,6 +93,12 @@ fetch(repositoryMatheus)
         btnProject.href = "project.html";
         btnProject.innerText = "Ver todos os Projetos";
         containerBtnProject.append(btnProject);
+      } else {
+        project.style.background = "#e7e7f1";
+        nameSection.style.color = "#00023a";
+        sortRepository.forEach((item) => {
+          createCardProject(item.NameProject, item.Description, item.LinkRepository, item.LinkProject);
+        });
       }
     }
     createSizeProject();

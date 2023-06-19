@@ -28,9 +28,11 @@ function createMenuHeader() {
     let li = document.createElement("li");
     menu.append(li);
     let a = document.createElement("a");
-    const checkPage = window.document.location.pathname;
-    const onIndex = "/index.html";
-    if (onIndex === checkPage) {
+    
+    const checkPage = window.location.pathname;
+    const onIndex = "matheusLdev/index.html";
+    const onIndexLocation = "/index.html";
+    if (checkPage === onIndex || checkPage === onIndexLocation) {
       if (nameSectionPage[contador] === "index") {
         a.href = "#";
       } else if (nameSectionPage[contador] === "project") {
