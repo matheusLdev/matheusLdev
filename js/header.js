@@ -9,7 +9,7 @@ function createMenuHeader() {
   let a = document.createElement("a");
   const checkPage = window.location.pathname;
   const onProject = "/matheusLdev/project.html";
-  checkPage === onProject ? a.href = "#project" : aButton.href = "#index";
+  checkPage === onProject ? a.href = "#project" : a.href = "#index";
   navegation.append(a);
   const myName = document.createElement("h1");
   myName.innerText = "Matheus Gonçalves";
