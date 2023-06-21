@@ -7,12 +7,14 @@ function createMenuHeader() {
   header.append(navegation)
   
   let a = document.createElement("a");
-  a.href = "#index";
+  const checkPage = window.location.pathname;
+  const onProject = "/matheusLdev/project.html";
+  checkPage === onProject ? a.href = "#project" : aButton.href = "#index";
   navegation.append(a);
   const myName = document.createElement("h1");
   myName.innerText = "Matheus Gonçalves";
   a.append(myName);
-
+  
   buttonMenuMobile.ariaLabel = "Abrir menu";
   buttonMenuMobile.id = "btn-mobile";
   buttonMenuMobile.ariaHasPopup = "true";
@@ -28,9 +30,6 @@ function createMenuHeader() {
     let li = document.createElement("li");
     menu.append(li);
     let a = document.createElement("a");
-    
-    const checkPage = window.location.pathname;
-    const onProject = "/matheusLdev/project.html";
     if (checkPage === onProject) {
       if (nameSectionPage[contador] === "index") {
         a.href = "index.html";
