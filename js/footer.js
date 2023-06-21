@@ -6,7 +6,7 @@ function createFooter() {
   footer.append(textFooter);
   
   const aButton = document.createElement("a")
-  aButton.href = "#";
+  aButton.href = "#index";
   footer.append(aButton);
 
   const imgButton = document.createElement("img");

@@ -7,7 +7,7 @@ function createMenuHeader() {
   header.append(navegation)
   
   let a = document.createElement("a");
-  a.href = "#";
+  a.href = "#index";
   navegation.append(a);
   const myName = document.createElement("h1");
   myName.innerText = "Matheus Gonçalves";
@@ -39,10 +39,8 @@ function createMenuHeader() {
       } else {
         a.href = `index.html#${nameSectionPage[contador]}`;
       }
-    } else {
-      if (nameSectionPage[contador] === "index") {
-        a.href = "#";
-      } else if (nameSectionPage[contador] === "project") {
+    } else { 
+      if (nameSectionPage[contador] === "project") {
         a.href = `#${nameSectionPage[contador]}`;
       } else {
         a.href = `#${nameSectionPage[contador]}`;
@@ -71,3 +69,22 @@ function handleMenuMobile() {
 
 buttonMenuMobile.addEventListener("click", handleMenuMobile);
 menu.addEventListener("click", handleMenuMobile);
+
+const linksMenu = document.querySelectorAll("a[href^='#']");
+
+function scrollSection(event){
+  event.preventDefault();
+  const href = event.currentTarget.getAttribute("href");
+  console.log(href)
+  const section = document.querySelector(href);
+  const topSection = section.offsetTop;
+  window.scrollTo({
+    top: topSection - 70,
+    behavior: "smooth",
+  });
+}
+
+linksMenu.forEach((link) => {
+  link.addEventListener('click', scrollSection);
+});
+
