@@ -65,24 +65,25 @@ function handleMenuMobile() {
     buttonMenuMobile.style.transition = "0.3s";
   }
 }
-
 buttonMenuMobile.addEventListener("click", handleMenuMobile);
 menu.addEventListener("click", handleMenuMobile);
 
-const linksMenu = document.querySelectorAll("a[href^='#']");
+function scrollSmooth() {
+  const linksMenu = document.querySelectorAll("a[href^='#']");
 
-function scrollSection(event){
-  event.preventDefault();
-  const href = event.currentTarget.getAttribute("href");
-  const section = document.querySelector(href);
-  const topSection = section.offsetTop;
-  window.scrollTo({
-    top: topSection - 70,
-    behavior: "smooth",
+  function scrollSection(event){
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    const topSection = section.offsetTop;
+    window.scrollTo({
+      top: topSection - 70,
+      behavior: "smooth",
+    });
+  }
+
+  linksMenu.forEach((link) => {
+    link.addEventListener('click', scrollSection);
   });
 }
-
-linksMenu.forEach((link) => {
-  link.addEventListener('click', scrollSection);
-});
-
+scrollSmooth()
