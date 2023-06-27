@@ -1,6 +1,5 @@
-const footer = document.querySelector("footer");
-
-function createFooter() {
+export default function createFooter() {
+  const footer = document.querySelector("footer");
   const textFooter = document.createElement("p");
   textFooter.innerText = "Desenvolvedor Matheus Gonçalves - Todos os direitos reservados";
   footer.append(textFooter);
@@ -16,6 +15,3 @@ function createFooter() {
   imgButton.alt = "Botão voltar ao início";
   aButton.append(imgButton);
 }
-
-
-createFooter();

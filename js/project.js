@@ -1,11 +1,12 @@
-const repositoryMatheus = "https://api.github.com/users/matheusLdev/repos";
+export default function project() {
+  const repositoryMatheus = "https://api.github.com/users/matheusLdev/repos";
 
-fetch(repositoryMatheus)
+  fetch(repositoryMatheus)
   .then(response => response.json())
   .then(data => {
     let allData = data;
     let sortRepository = []; 
-    
+      
     for (let i = 0; i < allData.length; i++) {
       let checkPage = allData[i].has_pages;
       let checkPortfolio = allData[i].name === "matheusLdev";
@@ -15,15 +16,15 @@ fetch(repositoryMatheus)
             let repository = {};
             let repositoryDate = allData[i].created_at;
 
-            year = Number(repositoryDate.substring(0, 4));
-            month = Number(repositoryDate.substring(5, 7)) - 1;
-            day = Number(repositoryDate.substring(8, 10));
-            formatDate = new Date(year, month, day);
+            let year = Number(repositoryDate.substring(0, 4));
+            let month = Number(repositoryDate.substring(5, 7)) - 1;
+            let day = Number(repositoryDate.substring(8, 10));
+            let formatDate = new Date(year, month, day);
 
-            dateMilisecond = Date.parse(formatDate);
+            let dateMilisecond = Date.parse(formatDate);
 
-            nameOrigin = allData[i].name;
-            nameProject = nameOrigin.replace(/[_-]/g, " ");
+            let nameOrigin = allData[i].name;
+            let nameProject = nameOrigin.replace(/[_-]/g, " ");
             nameProject = nameProject.replace(/projeto /gi, "");
             nameProject = nameProject.replace(/chale /gi, "Chalé ");
             nameProject = nameProject.replace(/noticia cidade/gi, "Notícias Cidade");
@@ -102,3 +103,4 @@ fetch(repositoryMatheus)
     }  
     createSizeProject();
   });
+}
