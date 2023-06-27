@@ -86,6 +86,6 @@ export default function header() {
     linksMenu.forEach((link) => {
       link.addEventListener('click', scrollSection);
     });
-  scrollSmooth();
   }
+  scrollSmooth();
 }
