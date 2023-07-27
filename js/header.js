@@ -12,9 +12,11 @@ export default function header() {
     const onProject = "/matheusLdev/project.html";
     checkPage === onProject ? a.href = "#project" : a.href = "#index";
     navegation.append(a);
-    const myName = document.createElement("h1");
-    myName.innerText = "Matheus Gonçalves";
-    a.append(myName);
+    const logomarca = document.createElement("img");
+    logomarca.src = "./img/icons/logomarca.svg";
+    logomarca.alt = "Logomarca";
+    logomarca.width = 70;
+    a.append(logomarca);
     
     buttonMenuMobile.ariaLabel = "Abrir menu";
     buttonMenuMobile.id = "btn-mobile";
