@@ -1,10 +1,10 @@
-# MG Desenvolvedor - Desenvolvedor Full Stack
+### Olá Mundo! 👋🏻
 
-### Olá! Eu sou Matheus Gonçalves ✌🏼Desenvolvedor Full Stack, apaixonado por aplicações web completas e robustas. Atualmente, estou cursando engenharia de software pela Estácio,
+#### 🧑🏻‍💻 Me chamo Matheus Gonçalves, atuo como desenvolvedor full stack, sou apaixonado por aplicações web completas, robustas, atraentes e responsivas. Atualmente, estou cursando engenharia de software pela Estácio, junto com a minha formação, realizo cursos livres para me especializar cada dia mais como desenvolvedor full stack e engenheiro de software.
 
-### - Pode falar comigo por aqui: 👉 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/developer-matheus/) 👈
+#### - Conheça meu portfólio: 👉🏻 [Aqui!](https://matheusldev.github.io/matheusLdev/) 👈🏻
 
-### - Veja meu portfólio: 👉 [![Portfólio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://matheusldev.github.io/matheusLdev/) 👈
+#### - Pode falar comigo por aqui: 👉🏻 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/developer-matheus/) 👈🏻
 
 ## - Tecnologias que utilizo no meu dia:
 
