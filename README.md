@@ -9,16 +9,16 @@ Além disso, amo assistir meus gatos brincando pela casa, enquanto tomo meu caf�
 #### Conheça mais sobre meu trabalho:
 
 <a href="https://matheusldev.github.io/matheusLdev/" style="display: flex; align-items: center; text-decoration: none">
-  👉🏻<img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfólio" style="border-radius: 8px; margin: 0 4px"/>👈🏻
+  <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfólio" style="border-radius: 8px; margin: 0 4px"/>
 </a>
 
 #### Pode me encontrar aqui:
 
 <a href="https://www.linkedin.com/in/developer-matheus/" style="display: flex; align-items: center; text-decoration: none">
-  👉🏻<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="border-radius: 8px; margin: 0 4px"/>👈🏻
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="border-radius: 8px; margin: 0 4px"/>
 </a>
 
-### - Ferramentas que trabalho diariamente:
+### Ferramentas que trabalho diariamente:
 
 <div style="display: flex; gap: 8px; flex-wrap: wrap">
   <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git" style="border-radius: 8px"/>
@@ -31,7 +31,7 @@ Além disso, amo assistir meus gatos brincando pela casa, enquanto tomo meu caf�
   <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" alt="SQL Server" style="border-radius: 8px"/>
 </div>
 
-### - Outras ferramentas que possuo domínio:
+### Outras ferramentas que possuo domínio:
 
 <div style="display: flex; gap: 8px; flex-wrap: wrap">
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" style= "border-radius: 8px" />
